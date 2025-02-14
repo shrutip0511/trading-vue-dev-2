@@ -11,6 +11,9 @@
             <span class="t-vue-title" v-if="!show_CustomProps" :style="{ color: common.colors.title }">
                 {{ common.title_txt }}
             </span>
+            <span class="t-vue-exchange">
+                {{ common.exchange_txt }}
+            </span>
             <span v-if="show_values && !show_CustomProps">
                 O<span class="t-vue-lspan">{{ ohlcv[0] }}</span>
                 H<span class="t-vue-lspan">{{ ohlcv[1] }}</span>
@@ -254,8 +257,13 @@ export default {
 }
 
 .t-vue-title {
-    margin-right: 0.25em;
     font-size: 1.45em;
+}
+
+.t-vue-exchange{
+    font-size: 0.9em;
+    font-weight: 600;
+    margin-right: 0.25em;
 }
 
 .t-vue-ind {
