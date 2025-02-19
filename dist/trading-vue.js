@@ -1,5 +1,5 @@
 /*!
- * TradingVue.JS - v1.0.3 - Fri Feb 14 2025
+ * TradingVue.JS - v1.0.3 - Wed Feb 19 2025
  *     https://github.com/tvjsx/trading-vue-js
  *     Copyright (c) 2019 C451 Code's All Right;
  *     Licensed under the MIT license
@@ -6486,7 +6486,7 @@ function GridMaker(id, params, master_grid) {
     var safe_hi = Math.max(self.$_hi, 0.0001);
     var y$ = safe_hi;
     var seenValues = new Set(); // To track unique values
-
+    var count = 0;
     while (y$ >= safe_lo) {
       var roundedValue = parseFloat(utils.strip(y$).toFixed($p.decimalPlace)); // Round to 3 decimal places
 
@@ -6496,7 +6496,8 @@ function GridMaker(id, params, master_grid) {
         seenValues.add(roundedValue);
       }
       y$ /= self.$_mult;
-      if (y > height || self.ys.length > 50) break; // Prevent excessive iterations
+      count++;
+      if (y > height || self.ys.length > 50 || count > 100) break; // Prevent excessive iterations
     }
   }
 
