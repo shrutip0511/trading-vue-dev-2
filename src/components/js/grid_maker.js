@@ -450,7 +450,7 @@ function GridMaker(id, params, master_grid = null) {
 
         let y$ = safe_hi;
         const seenValues = new Set();  // To track unique values
-
+        let count = 0
         while (y$ >= safe_lo) {
             let roundedValue = parseFloat(Utils.strip(y$).toFixed($p.decimalPlace));  // Round to 3 decimal places
 
@@ -461,8 +461,8 @@ function GridMaker(id, params, master_grid = null) {
             }
 
             y$ /= self.$_mult;
-
-            if (y > height || self.ys.length > 50) break; // Prevent excessive iterations
+            count++;
+            if (y > height || self.ys.length > 50 || count > 100) break; // Prevent excessive iterations
         }
     }
 
