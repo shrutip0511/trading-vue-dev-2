@@ -3,7 +3,7 @@
    <div>
   <title-chart-legend
       ref="legend"
-      :values="section_values.ohlcv"
+      :values="section_values"
       :decimalPlace="decimalPlace"
       :legendDecimal="legendDecimal"
       :grid_id="grid_id"
@@ -130,6 +130,8 @@ export default {
      // console.log("section_values")
       let p = Object.assign({}, this.$props.common);
       p.width = p.layout.grids[id].width;
+      console.log("section_values",p.cursor.values[id]);
+      
       return p.cursor.values[id];
     },
     legend_props() {
