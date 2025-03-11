@@ -54,7 +54,7 @@ export default {
             return this.common?.legendTxtConfig;
         },
         ohlcv() {
-            if (!this.$props.values || !this.$props.values.ohlcv) {
+            if (!this.$props.values || !this.$props.values) {
                 return Array(6).fill('n/a')
             }
             // const prec = this.layout.prec
@@ -69,22 +69,22 @@ export default {
 
             if (this.$props.legendDecimal) {
                 return [
-                    this.$props.values.ohlcv[1].toFixed(this.$props.values.ohlcv[1] < 1 ? 3 : 2),
-                    this.$props.values.ohlcv[2].toFixed(this.$props.values.ohlcv[2] < 1 ? 3 : 2),
-                    this.$props.values.ohlcv[3].toFixed(this.$props.values.ohlcv[3] < 1 ? 3 : 2),
-                    this.$props.values.ohlcv[4].toFixed(this.$props.values.ohlcv[4] < 1 ? 3 : 2),
-                    this.$props.values.ohlcv[5] ?
-                        Number(this.$props.values.ohlcv[5].toFixed(0)).toLocaleString('en-AU') :
+                    this.$props.values[1].toFixed(this.$props.values[1] < 1 ? 3 : 2),
+                    this.$props.values[2].toFixed(this.$props.values[2] < 1 ? 3 : 2),
+                    this.$props.values[3].toFixed(this.$props.values[3] < 1 ? 3 : 2),
+                    this.$props.values[4].toFixed(this.$props.values[4] < 1 ? 3 : 2),
+                    this.$props.values[5] ?
+                        Number(this.$props.values[5].toFixed(0)).toLocaleString('en-AU') :
                         'n/a'
                 ]
             } else {
                 return [
-                    this.$props.values.ohlcv[1].toFixed(prec),
-                    this.$props.values.ohlcv[2].toFixed(prec),
-                    this.$props.values.ohlcv[3].toFixed(prec),
-                    this.$props.values.ohlcv[4].toFixed(prec),
-                    this.$props.values.ohlcv[5] ?
-                        Number(this.$props.values.ohlcv[5].toFixed(0)).toLocaleString('en-AU') :
+                    this.$props.values[1].toFixed(prec),
+                    this.$props.values[2].toFixed(prec),
+                    this.$props.values[3].toFixed(prec),
+                    this.$props.values[4].toFixed(prec),
+                    this.$props.values[5] ?
+                        Number(this.$props.values[5].toFixed(0)).toLocaleString('en-AU') :
                         'n/a'
                 ]
             }

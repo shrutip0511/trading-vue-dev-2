@@ -3,7 +3,7 @@
    <div>
   <title-chart-legend
       ref="legend"
-      :values="section_values"
+      :values="section_values.ohlcv"
       :decimalPlace="decimalPlace"
       :legendDecimal="legendDecimal"
       :grid_id="grid_id"
