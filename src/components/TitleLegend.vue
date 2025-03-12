@@ -1,6 +1,5 @@
 <template>
     <div class="trading-vue-legend title-legend" :style="calc_style">
-        {{ this.$props.values }}
         <div v-if="(grid_id === 0 && showTitleChartLegend)" class="trading-vue-ohlcv"
             :style="{ 'max-width': common.width + 'px' }">
             <template v-if="common?.showLegendPropsData && common.showLegendPropsData.length">
