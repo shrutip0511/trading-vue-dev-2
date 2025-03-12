@@ -197,21 +197,21 @@ export default {
     },
   },
   watch: {
-    // common: {
-    //   handler: function (val, old_val) {
-    //     let newhash = this.ghash(val);
-    //     if (newhash !== this.last_ghash) {
-    //       this.rerender++;
-    //     }
+    common: {
+      handler: function (val, old_val) {
+        let newhash = this.ghash(val);
+        if (newhash !== this.last_ghash) {
+          this.rerender++;
+        }
 
-    //     if (val.data.length !== old_val.data.length) {
-    //       // Look at this nasty trick!
-    //       this.rerender++;
-    //     }
-    //     this.last_ghash = newhash;
-    //   },
-    //   deep: true,
-    // },
+        if (val.data.length !== old_val.data.length) {
+          // Look at this nasty trick!
+          this.rerender++;
+        }
+        this.last_ghash = newhash;
+      },
+      deep: true,
+    },
   },
   mounted() {
     this.init_shaders(this.$props.common.skin);
