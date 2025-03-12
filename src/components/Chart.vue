@@ -268,7 +268,13 @@ export default {
         })
       },
       deep: true
-    }
+    },
+    cursor: {
+      handler: function (n, p) {
+        this.$emit("updateSection", n);
+      },
+      deep: true
+    },
   },
   created() {
 
