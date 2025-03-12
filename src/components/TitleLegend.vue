@@ -1,6 +1,6 @@
 <template>
     <div class="trading-vue-legend title-legend" :style="calc_style">
-        <div v-if="(grid_id === 0 && showTitleChartLegend)" class="trading-vue-ohlcv"
+        <!-- <div v-if="(grid_id === 0 && showTitleChartLegend)" class="trading-vue-ohlcv"
             :style="{ 'max-width': common.width + 'px' }">
             <template v-if="common?.showLegendPropsData && common.showLegendPropsData.length">
                 <b v-for="(n, i) in common.showLegendPropsData" :key="i">{{ n.k }} : {{ n.v }}&nbsp;</b><br />
@@ -14,7 +14,6 @@
                 {{ common.exchange_txt }}
             </span>
             <span v-if="show_values && !show_CustomProps">
-                {{ values }}
                 O<span class="t-vue-lspan">{{ ohlcv[0] }}</span>
                 H<span class="t-vue-lspan">{{ ohlcv[1] }}</span>
                 L<span class="t-vue-lspan">{{ ohlcv[2] }}</span>
@@ -24,7 +23,8 @@
             <span v-if="!show_values" class="t-vue-lspan" :style="{ color: common.colors.text }">
                 {{ (common.meta.last || [])[4] }}
             </span>
-        </div>
+        </div> -->
+        {{ values }}
 
     </div>
 </template>
@@ -44,8 +44,6 @@ export default {
             return this.common?.legendTxtConfig;
         },
         ohlcv() {
-            console.log('this.$props.values', this.$props.values);
-            
             if (!this.$props.values || !this.$props.values.ohlcv) {
                 return Array(6).fill('n/a')
             }
