@@ -2,7 +2,17 @@
   <!-- Chart components combined together -->
   <div class="trading-vue-chart" :style="styles">
     <keyboard ref="keyboard"></keyboard>
-    <div class="legend-here"></div>
+    <div class="legend-here">
+      <TitleLegendChart 
+        ref="legend" 
+        :values="main_section_values" 
+        :decimalPlace="decimalPlace"
+        :legendDecimal="legendDecimal" 
+        :common="main_section_legend_props"
+        :grid_id="0" 
+        :showTitleChartLegend="showTitleChartLegend"
+      />
+    </div>
     <grid-section v-for="(grid, i) in this._layout.grids" :key="grid.id" ref="sec" :common="section_props(i)"
       :grid_id="i" @register-kb-listener="register_kb" @remove-kb-listener="remove_kb" @range-changed="range_changed"
       @cursor-changed="cursor_changed" @cursor-locked="cursor_locked" @sidebar-transform="set_ytransform"
@@ -31,6 +41,7 @@ import Shaders from '../mixins/shaders.js'
 import DataTrack from '../mixins/datatrack.js'
 import TI from './js/ti_mapping.js'
 import Const from '../stuff/constants.js'
+import TitleLegendChart from './TitleLegendChart.vue'
 
 
 export default {
@@ -86,7 +97,8 @@ export default {
       last_values: {},
       sub_start: undefined,
       activated: false,
-      legendTxtConfig: undefined
+      legendTxtConfig: undefined,
+      meta_props: {},
     }
   },
   computed: {
@@ -106,6 +118,31 @@ export default {
       p.overlays = this.$props.overlays
       p.showSettingsButton = this.$props.showSettingsButton
       return p
+    },
+    main_section_values() {
+      const id = 0;
+      // console.log("section_values")
+      let p = Object.assign({}, main_section);
+      p.width = p.layout.grids[id].width;
+      console.log("main_section_values", p.cursor.values[id]);
+
+      return p.cursor.values[id];
+    },
+    main_section_legend_props() {
+      const id = 0;
+      let p = Object.assign({}, main_section);
+      let showLegendPropsData = [];
+      let showLegendProps = localStorage.getItem('showLegendProps')
+      if (showLegendProps) {
+        showLegendPropsData = JSON.parse(showLegendProps)
+        if (Array.isArray(showLegendPropsData) && showLegendPropsData.length > 0) {
+          p.showLegendPropsData = showLegendPropsData
+        }
+      }
+      return p;
+    },
+    get_meta_props() {
+      return this.meta_props;
     },
     sub_section() {
       let p = Object.assign({}, this.common_props())

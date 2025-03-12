@@ -17,20 +17,6 @@
 return /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 43:
-/***/ ((module, exports, __webpack_require__) => {
-
-// Imports
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(314);
-exports = ___CSS_LOADER_API_IMPORT___(false);
-// Module
-exports.push([module.id, "\n.trading-vue-section {\r\n  height: 0;\r\n  position: absolute;\n}\r\n", ""]);
-// Exports
-module.exports = exports;
-
-
-/***/ }),
-
 /***/ 53:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -306,6 +292,20 @@ IndexedArray.prototype.getRange = function (begin, end) {
     // return range
     return this.data.slice(start, finish + 1);
 };
+
+
+/***/ }),
+
+/***/ 101:
+/***/ ((module, exports, __webpack_require__) => {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(314);
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.id, "\n.trading-vue-section {\r\n  height: 0;\r\n  position: absolute;\n}\r\n", ""]);
+// Exports
+module.exports = exports;
 
 
 /***/ }),
@@ -3352,24 +3352,6 @@ module.exports = exports;
 
 /***/ }),
 
-/***/ 312:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(43);
-if(content.__esModule) content = content.default;
-if(typeof content === 'string') content = [[module.id, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var add = (__webpack_require__(534)/* ["default"] */ .A)
-var update = add("4a71db68", content, false, {});
-// Hot Module Replacement
-if(false) {}
-
-/***/ }),
-
 /***/ 314:
 /***/ ((module) => {
 
@@ -4267,6 +4249,38 @@ module.exports = _regeneratorRuntime, module.exports.__esModule = true, module.e
 
 /***/ }),
 
+/***/ 651:
+/***/ ((module, exports, __webpack_require__) => {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(314);
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.id, "\n.trading-vue-legend {\r\n    position: relative;\r\n    z-index: 1;\r\n    font-size: 1.25em;\r\n    margin-left: 10px;\r\n    pointer-events: none;\r\n    text-align: left;\r\n    user-select: none;\r\n    font-weight: 300;\n}\n@media (min-resolution: 2x) {\n.trading-vue-legend {\r\n        font-weight: 400;\n}\n}\n.trading-vue-ohlcv {\r\n    pointer-events: none;\r\n    margin-bottom: 0.5em;\n}\n.t-vue-lspan {\r\n    font-variant-numeric: tabular-nums;\r\n    font-size: 0.95em;\r\n    color: #999999;\r\n    /* TODO: move => params */\r\n    margin-left: 0.1em;\r\n    margin-right: 0.2em;\n}\n.t-vue-title {\r\n    font-size: 1.45em;\n}\n.t-vue-exchange{\r\n    font-size: 0.9em;\r\n    font-weight: 600;\r\n    margin-right: 0.25em;\n}\n.t-vue-ind {\r\n    display: flex;\r\n    margin-left: 0.2em;\r\n    margin-bottom: 0.5em;\r\n    font-size: 1.0em;\r\n    margin-top: 0.3em;\n}\n.t-vue-ivalue {\r\n    margin-left: 0.5em;\n}\n.t-vue-unknown {\r\n    color: #999999;\r\n    /* TODO: move => params */\n}\n.tvjs-appear-enter-active,\r\n.tvjs-appear-leave-active {\r\n    transition: all .25s ease;\n}\n.tvjs-appear-enter,\r\n.tvjs-appear-leave-to {\r\n    opacity: 0;\n}\r\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ 658:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(101);
+if(content.__esModule) content = content.default;
+if(typeof content === 'string') content = [[module.id, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = (__webpack_require__(534)/* ["default"] */ .A)
+var update = add("24d5a5f4", content, false, {});
+// Hot Module Replacement
+if(false) {}
+
+/***/ }),
+
 /***/ 688:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -4280,6 +4294,24 @@ if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
 var add = (__webpack_require__(534)/* ["default"] */ .A)
 var update = add("0f5b62f0", content, false, {});
+// Hot Module Replacement
+if(false) {}
+
+/***/ }),
+
+/***/ 730:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(651);
+if(content.__esModule) content = content.default;
+if(typeof content === 'string') content = [[module.id, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = (__webpack_require__(534)/* ["default"] */ .A)
+var update = add("87915b08", content, false, {});
 // Hot Module Replacement
 if(false) {}
 
@@ -5368,8 +5400,8 @@ var MAP_UNIT = {
   map_unit: MAP_UNIT,
   IB_TF_WARN: IB_TF_WARN
 });
-;// ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/Chart.vue?vue&type=template&id=0776aa24
-var Chartvue_type_template_id_0776aa24_render = function render() {
+;// ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/Chart.vue?vue&type=template&id=15afa33c
+var Chartvue_type_template_id_15afa33c_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', {
@@ -5379,7 +5411,17 @@ var Chartvue_type_template_id_0776aa24_render = function render() {
     ref: "keyboard"
   }), _vm._v(" "), _c('div', {
     staticClass: "legend-here"
-  }), _vm._v(" "), _vm._l(this._layout.grids, function (grid, i) {
+  }, [_c('TitleLegendChart', {
+    ref: "legend",
+    attrs: {
+      "values": _vm.main_section_values,
+      "decimalPlace": _vm.decimalPlace,
+      "legendDecimal": _vm.legendDecimal,
+      "common": _vm.main_section_legend_props,
+      "grid_id": 0,
+      "showTitleChartLegend": _vm.showTitleChartLegend
+    }
+  })], 1), _vm._v(" "), _vm._l(this._layout.grids, function (grid, i) {
     return _c('grid-section', {
       key: grid.id,
       ref: "sec",
@@ -5420,10 +5462,10 @@ var Chartvue_type_template_id_0776aa24_render = function render() {
     }
   }, 'botbar', _vm.botbar_props, false))], 2);
 };
-var Chartvue_type_template_id_0776aa24_staticRenderFns = [];
-Chartvue_type_template_id_0776aa24_render._withStripped = true;
+var Chartvue_type_template_id_15afa33c_staticRenderFns = [];
+Chartvue_type_template_id_15afa33c_render._withStripped = true;
 
-;// ./src/components/Chart.vue?vue&type=template&id=0776aa24
+;// ./src/components/Chart.vue?vue&type=template&id=15afa33c
 
 ;// ./node_modules/@babel/runtime/helpers/esm/arrayWithHoles.js
 function _arrayWithHoles(r) {
@@ -6968,25 +7010,11 @@ var CursorUpdater = /*#__PURE__*/function () {
   }]);
 }();
 /* harmony default export */ const updater = (CursorUpdater);
-;// ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/Section.vue?vue&type=template&id=4f749ec0
-var Sectionvue_type_template_id_4f749ec0_render = function render() {
+;// ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/Section.vue?vue&type=template&id=2f1fe3a4
+var Sectionvue_type_template_id_2f1fe3a4_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
-  return _c('div', [_c('title-chart-legend', {
-    ref: "legend",
-    attrs: {
-      "values": _vm.section_values,
-      "decimalPlace": _vm.decimalPlace,
-      "legendDecimal": _vm.legendDecimal,
-      "grid_id": _vm.grid_id,
-      "common": _vm.legend_props,
-      "meta_props": _vm.get_meta_props,
-      "showTitleChartLegend": _vm.showTitleChartLegend
-    },
-    on: {
-      "legend-button-click": _vm.button_click
-    }
-  }), _vm._v(" "), _c('div', {
+  return _c('div', [_c('div', {
     staticClass: "trading-vue-section"
   }, [_c('chart-legend', {
     ref: "legend",
@@ -7038,12 +7066,12 @@ var Sectionvue_type_template_id_4f749ec0_render = function render() {
     on: {
       "sidebar-transform": _vm.sidebar_transform
     }
-  }, 'sidebar', _vm.sidebar_props, false))], 1)], 1);
+  }, 'sidebar', _vm.sidebar_props, false))], 1)]);
 };
-var Sectionvue_type_template_id_4f749ec0_staticRenderFns = [];
-Sectionvue_type_template_id_4f749ec0_render._withStripped = true;
+var Sectionvue_type_template_id_2f1fe3a4_staticRenderFns = [];
+Sectionvue_type_template_id_2f1fe3a4_render._withStripped = true;
 
-;// ./src/components/Section.vue?vue&type=template&id=4f749ec0
+;// ./src/components/Section.vue?vue&type=template&id=2f1fe3a4
 
 ;// ./src/stuff/frame.js
 
@@ -12906,9 +12934,9 @@ function shaders_arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.
 });
 ;// ./src/components/Section.vue?vue&type=script&lang=js
  /* harmony default export */ const components_Sectionvue_type_script_lang_js = (Sectionvue_type_script_lang_js); 
-// EXTERNAL MODULE: ./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/Section.vue?vue&type=style&index=0&id=4f749ec0&prod&lang=css
-var Sectionvue_type_style_index_0_id_4f749ec0_prod_lang_css = __webpack_require__(312);
-;// ./src/components/Section.vue?vue&type=style&index=0&id=4f749ec0&prod&lang=css
+// EXTERNAL MODULE: ./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/Section.vue?vue&type=style&index=0&id=2f1fe3a4&prod&lang=css
+var Sectionvue_type_style_index_0_id_2f1fe3a4_prod_lang_css = __webpack_require__(658);
+;// ./src/components/Section.vue?vue&type=style&index=0&id=2f1fe3a4&prod&lang=css
 
 ;// ./src/components/Section.vue
 
@@ -12921,8 +12949,8 @@ var Sectionvue_type_style_index_0_id_4f749ec0_prod_lang_css = __webpack_require_
 
 var Section_component = normalizeComponent(
   components_Sectionvue_type_script_lang_js,
-  Sectionvue_type_template_id_4f749ec0_render,
-  Sectionvue_type_template_id_4f749ec0_staticRenderFns,
+  Sectionvue_type_template_id_2f1fe3a4_render,
+  Sectionvue_type_template_id_2f1fe3a4_staticRenderFns,
   false,
   null,
   null,
@@ -13608,7 +13636,146 @@ var TI = /*#__PURE__*/function () {
   }]);
 }();
 
+;// ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/TitleLegendChart.vue?vue&type=template&id=3be32fe8
+var TitleLegendChartvue_type_template_id_3be32fe8_render = function render() {
+  var _vm$common;
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c('div', {
+    staticClass: "trading-vue-legend title-legend",
+    style: _vm.calc_style
+  }, [_vm.grid_id === 0 && _vm.showTitleChartLegend ? _c('div', {
+    staticClass: "trading-vue-ohlcv",
+    style: {
+      'max-width': _vm.common.width + 'px'
+    }
+  }, [(_vm$common = _vm.common) !== null && _vm$common !== void 0 && _vm$common.showLegendPropsData && _vm.common.showLegendPropsData.length ? [_vm._l(_vm.common.showLegendPropsData, function (n, i) {
+    return _c('b', {
+      key: i
+    }, [_vm._v(_vm._s(n.k) + " : " + _vm._s(n.v) + " ")]);
+  }), _c('br')] : _vm._e(), _vm._v(" "), _vm.show_CustomProps ? _vm._l(_vm.legendTxtConfig, function (n, i) {
+    return _c('span', {
+      key: i,
+      style: n.style
+    }, [_vm._v(_vm._s(n.name) + " ")]);
+  }) : _vm._e(), _vm._v(" "), !_vm.show_CustomProps ? _c('span', {
+    staticClass: "t-vue-title",
+    style: {
+      color: _vm.common.colors.title
+    }
+  }, [_vm._v("\n            " + _vm._s(_vm.common.title_txt) + "\n        ")]) : _vm._e(), _vm._v(" "), _c('span', {
+    staticClass: "t-vue-exchange"
+  }, [_vm._v("\n            " + _vm._s(_vm.common.exchange_txt) + "\n        ")]), _vm._v(" "), _vm.show_values && !_vm.show_CustomProps ? _c('span', [_vm._v("\n            O"), _c('span', {
+    staticClass: "t-vue-lspan"
+  }, [_vm._v(_vm._s(_vm.ohlcv[0]))]), _vm._v("\n            H"), _c('span', {
+    staticClass: "t-vue-lspan"
+  }, [_vm._v(_vm._s(_vm.ohlcv[1]))]), _vm._v("\n            L"), _c('span', {
+    staticClass: "t-vue-lspan"
+  }, [_vm._v(_vm._s(_vm.ohlcv[2]))]), _vm._v("\n            C"), _c('span', {
+    staticClass: "t-vue-lspan"
+  }, [_vm._v(_vm._s(_vm.ohlcv[3]))]), _vm._v("\n            V"), _c('span', {
+    staticClass: "t-vue-lspan"
+  }, [_vm._v(_vm._s(_vm.ohlcv[4]))])]) : _vm._e(), _vm._v(" "), !_vm.show_values ? _c('span', {
+    staticClass: "t-vue-lspan",
+    style: {
+      color: _vm.common.colors.text
+    }
+  }, [_vm._v("\n            " + _vm._s((_vm.common.meta.last || [])[4]) + "\n        ")]) : _vm._e()], 2) : _vm._e()]);
+};
+var TitleLegendChartvue_type_template_id_3be32fe8_staticRenderFns = [];
+TitleLegendChartvue_type_template_id_3be32fe8_render._withStripped = true;
+
+;// ./src/components/TitleLegendChart.vue?vue&type=template&id=3be32fe8
+
+;// ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/TitleLegendChart.vue?vue&type=script&lang=js
+/* harmony default export */ const TitleLegendChartvue_type_script_lang_js = ({
+  name: 'TitleChartLegend',
+  components: {},
+  props: ['common', 'values', 'decimalPlace', 'grid_id', 'meta_props', 'legendDecimal', 'showTitleChartLegend'],
+  computed: {
+    show_CustomProps: function show_CustomProps() {
+      var _this$common;
+      return ((_this$common = this.common) === null || _this$common === void 0 ? void 0 : _this$common.show_CustomProps) || false;
+    },
+    legendTxtConfig: function legendTxtConfig() {
+      var _this$common2;
+      return (_this$common2 = this.common) === null || _this$common2 === void 0 ? void 0 : _this$common2.legendTxtConfig;
+    },
+    ohlcv: function ohlcv() {
+      if (!this.$props.values || !this.$props.values.ohlcv) {
+        return Array(6).fill('n/a');
+      }
+      // const prec = this.layout.prec
+      var prec = this.decimalPlace;
+      // const prec = 3
+      // TODO: main the main legend more customizable
+      var id = this.main_type + '_0';
+      var meta = this.$props.meta_props[id] || {};
+      if (meta.legend) {
+        return (meta.legend() || []).map(function (x) {
+          return x.value;
+        });
+      }
+      if (this.$props.legendDecimal) {
+        return [this.$props.values.ohlcv[1].toFixed(this.$props.values.ohlcv[1] < 1 ? 3 : 2), this.$props.values.ohlcv[2].toFixed(this.$props.values.ohlcv[2] < 1 ? 3 : 2), this.$props.values.ohlcv[3].toFixed(this.$props.values.ohlcv[3] < 1 ? 3 : 2), this.$props.values.ohlcv[4].toFixed(this.$props.values.ohlcv[4] < 1 ? 3 : 2), this.$props.values.ohlcv[5] ? Number(this.$props.values.ohlcv[5].toFixed(0)).toLocaleString('en-AU') : 'n/a'];
+      } else {
+        return [this.$props.values.ohlcv[1].toFixed(prec), this.$props.values.ohlcv[2].toFixed(prec), this.$props.values.ohlcv[3].toFixed(prec), this.$props.values.ohlcv[4].toFixed(prec), this.$props.values.ohlcv[5] ? Number(this.$props.values.ohlcv[5].toFixed(0)).toLocaleString('en-AU') : 'n/a'];
+      }
+    },
+    calc_style: function calc_style() {
+      var top = this.layout.height > 150 ? 3 : 1;
+      var grids = this.$props.common.layout.grids;
+      var w = grids[0] ? grids[0].width : undefined;
+      return {
+        top: "".concat(this.layout.offset + top, "px"),
+        width: "".concat(w - 20, "px")
+      };
+    },
+    layout: function layout() {
+      var id = this.$props.grid_id;
+      return this.$props.common.layout.grids[id];
+    },
+    main_type: function main_type() {
+      var f = this.common.data.find(function (x) {
+        return x.main;
+      });
+      return f ? f.type : undefined;
+    },
+    show_values: function show_values() {
+      return this.common.cursor.mode !== 'explore';
+    }
+  },
+  methods: {}
+});
+;// ./src/components/TitleLegendChart.vue?vue&type=script&lang=js
+ /* harmony default export */ const components_TitleLegendChartvue_type_script_lang_js = (TitleLegendChartvue_type_script_lang_js); 
+// EXTERNAL MODULE: ./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/TitleLegendChart.vue?vue&type=style&index=0&id=3be32fe8&prod&lang=css
+var TitleLegendChartvue_type_style_index_0_id_3be32fe8_prod_lang_css = __webpack_require__(730);
+;// ./src/components/TitleLegendChart.vue?vue&type=style&index=0&id=3be32fe8&prod&lang=css
+
+;// ./src/components/TitleLegendChart.vue
+
+
+
+;
+
+
+/* normalize component */
+
+var TitleLegendChart_component = normalizeComponent(
+  components_TitleLegendChartvue_type_script_lang_js,
+  TitleLegendChartvue_type_template_id_3be32fe8_render,
+  TitleLegendChartvue_type_template_id_3be32fe8_staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* harmony default export */ const TitleLegendChart = (TitleLegendChart_component.exports);
 ;// ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/Chart.vue?vue&type=script&lang=js
+
 
 
 
@@ -13667,7 +13834,8 @@ var TI = /*#__PURE__*/function () {
       last_values: {},
       sub_start: undefined,
       activated: false,
-      legendTxtConfig: undefined
+      legendTxtConfig: undefined,
+      meta_props: {}
     };
   },
   computed: {
@@ -13687,6 +13855,30 @@ var TI = /*#__PURE__*/function () {
       p.overlays = this.$props.overlays;
       p.showSettingsButton = this.$props.showSettingsButton;
       return p;
+    },
+    main_section_values: function main_section_values() {
+      var id = 0;
+      // console.log("section_values")
+      var p = Object.assign({}, main_section);
+      p.width = p.layout.grids[id].width;
+      console.log("main_section_values", p.cursor.values[id]);
+      return p.cursor.values[id];
+    },
+    main_section_legend_props: function main_section_legend_props() {
+      var id = 0;
+      var p = Object.assign({}, main_section);
+      var showLegendPropsData = [];
+      var showLegendProps = localStorage.getItem('showLegendProps');
+      if (showLegendProps) {
+        showLegendPropsData = JSON.parse(showLegendProps);
+        if (Array.isArray(showLegendPropsData) && showLegendPropsData.length > 0) {
+          p.showLegendPropsData = showLegendPropsData;
+        }
+      }
+      return p;
+    },
+    get_meta_props: function get_meta_props() {
+      return this.meta_props;
     },
     sub_section: function sub_section() {
       var p = Object.assign({}, this.common_props());
@@ -14158,8 +14350,8 @@ var TI = /*#__PURE__*/function () {
 ;
 var Chart_component = normalizeComponent(
   components_Chartvue_type_script_lang_js,
-  Chartvue_type_template_id_0776aa24_render,
-  Chartvue_type_template_id_0776aa24_staticRenderFns,
+  Chartvue_type_template_id_15afa33c_render,
+  Chartvue_type_template_id_15afa33c_staticRenderFns,
   false,
   null,
   null,
