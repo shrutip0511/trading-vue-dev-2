@@ -14,11 +14,11 @@
                 {{ common.exchange_txt }}
             </span>
             <span v-if="show_values && !show_CustomProps">
-                O<span class="t-vue-lspan">{{ ohlcv[0] }}</span>
-                H<span class="t-vue-lspan">{{ ohlcv[1] }}</span>
+                O<span class="t-vue-lspan">{{ open }}</span>
+                <!-- H<span class="t-vue-lspan">{{ ohlcv[1] }}</span>
                 L<span class="t-vue-lspan">{{ ohlcv[2] }}</span>
                 C<span class="t-vue-lspan">{{ ohlcv[3] }}</span>
-                V<span class="t-vue-lspan">{{ ohlcv[4] }}</span>
+                V<span class="t-vue-lspan">{{ ohlcv[4] }}</span> -->
             </span>
             <span v-if="!show_values" class="t-vue-lspan" :style="{ color: common.colors.text }">
                 {{ (common.meta.last || [])[4] }}
@@ -36,6 +36,19 @@ export default {
     props: [
         'common', 'values', 'decimalPlace', 'grid_id', 'meta_props', 'legendDecimal', 'showTitleChartLegend',
     ],
+    data() {
+        return {
+            open: 'n/a'
+        }
+    },
+    watch:{
+        ohlcv:{
+            handler:function(){
+                this.open = this.ohlcv[0]
+            },
+            deep:true
+        }
+    },
     computed: {
         show_CustomProps() {
             return this.common?.show_CustomProps || false;
