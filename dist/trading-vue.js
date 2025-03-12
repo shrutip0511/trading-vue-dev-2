@@ -296,20 +296,6 @@ IndexedArray.prototype.getRange = function (begin, end) {
 
 /***/ }),
 
-/***/ 101:
-/***/ ((module, exports, __webpack_require__) => {
-
-// Imports
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(314);
-exports = ___CSS_LOADER_API_IMPORT___(false);
-// Module
-exports.push([module.id, "\n.trading-vue-section {\r\n  height: 0;\r\n  position: absolute;\n}\r\n", ""]);
-// Exports
-module.exports = exports;
-
-
-/***/ }),
-
 /***/ 168:
 /***/ ((module, exports, __webpack_require__) => {
 
@@ -3581,6 +3567,20 @@ if(false) {}
 
 /***/ }),
 
+/***/ 463:
+/***/ ((module, exports, __webpack_require__) => {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(314);
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.id, "\n.trading-vue-section {\r\n  height: 0;\r\n  position: absolute;\n}\r\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
 /***/ 531:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -4249,24 +4249,6 @@ module.exports = _regeneratorRuntime, module.exports.__esModule = true, module.e
 
 /***/ }),
 
-/***/ 658:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(101);
-if(content.__esModule) content = content.default;
-if(typeof content === 'string') content = [[module.id, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var add = (__webpack_require__(534)/* ["default"] */ .A)
-var update = add("24d5a5f4", content, false, {});
-// Hot Module Replacement
-if(false) {}
-
-/***/ }),
-
 /***/ 688:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -4511,6 +4493,24 @@ exports.push([module.id, "\n.tvjs-item-list {\r\n    position: absolute;\r\n    
 // Exports
 module.exports = exports;
 
+
+/***/ }),
+
+/***/ 944:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(463);
+if(content.__esModule) content = content.default;
+if(typeof content === 'string') content = [[module.id, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = (__webpack_require__(534)/* ["default"] */ .A)
+var update = add("bbd1cdc8", content, false, {});
+// Hot Module Replacement
+if(false) {}
 
 /***/ }),
 
@@ -5368,8 +5368,8 @@ var MAP_UNIT = {
   map_unit: MAP_UNIT,
   IB_TF_WARN: IB_TF_WARN
 });
-;// ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/Chart.vue?vue&type=template&id=41770e2a
-var Chartvue_type_template_id_41770e2a_render = function render() {
+;// ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/Chart.vue?vue&type=template&id=73eac1b2
+var Chartvue_type_template_id_73eac1b2_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', {
@@ -5431,10 +5431,10 @@ var Chartvue_type_template_id_41770e2a_render = function render() {
     }
   }, 'botbar', _vm.botbar_props, false))], 2);
 };
-var Chartvue_type_template_id_41770e2a_staticRenderFns = [];
-Chartvue_type_template_id_41770e2a_render._withStripped = true;
+var Chartvue_type_template_id_73eac1b2_staticRenderFns = [];
+Chartvue_type_template_id_73eac1b2_render._withStripped = true;
 
-;// ./src/components/Chart.vue?vue&type=template&id=41770e2a
+;// ./src/components/Chart.vue?vue&type=template&id=73eac1b2
 
 ;// ./node_modules/@babel/runtime/helpers/esm/arrayWithHoles.js
 function _arrayWithHoles(r) {
@@ -6979,8 +6979,8 @@ var CursorUpdater = /*#__PURE__*/function () {
   }]);
 }();
 /* harmony default export */ const updater = (CursorUpdater);
-;// ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/Section.vue?vue&type=template&id=2f1fe3a4
-var Sectionvue_type_template_id_2f1fe3a4_render = function render() {
+;// ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/Section.vue?vue&type=template&id=e5a74d64
+var Sectionvue_type_template_id_e5a74d64_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', [_c('div', {
@@ -7037,10 +7037,10 @@ var Sectionvue_type_template_id_2f1fe3a4_render = function render() {
     }
   }, 'sidebar', _vm.sidebar_props, false))], 1)]);
 };
-var Sectionvue_type_template_id_2f1fe3a4_staticRenderFns = [];
-Sectionvue_type_template_id_2f1fe3a4_render._withStripped = true;
+var Sectionvue_type_template_id_e5a74d64_staticRenderFns = [];
+Sectionvue_type_template_id_e5a74d64_render._withStripped = true;
 
-;// ./src/components/Section.vue?vue&type=template&id=2f1fe3a4
+;// ./src/components/Section.vue?vue&type=template&id=e5a74d64
 
 ;// ./src/stuff/frame.js
 
@@ -12736,7 +12736,8 @@ function shaders_arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.
       // console.log("section_values")
       var p = Object.assign({}, this.$props.common);
       p.width = p.layout.grids[id].width;
-      console.log("section_values", p.cursor.values[id]);
+      // console.log("section_values",p.cursor.values[id]);
+
       return p.cursor.values[id];
     },
     legend_props: function legend_props() {
@@ -12903,9 +12904,9 @@ function shaders_arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.
 });
 ;// ./src/components/Section.vue?vue&type=script&lang=js
  /* harmony default export */ const components_Sectionvue_type_script_lang_js = (Sectionvue_type_script_lang_js); 
-// EXTERNAL MODULE: ./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/Section.vue?vue&type=style&index=0&id=2f1fe3a4&prod&lang=css
-var Sectionvue_type_style_index_0_id_2f1fe3a4_prod_lang_css = __webpack_require__(658);
-;// ./src/components/Section.vue?vue&type=style&index=0&id=2f1fe3a4&prod&lang=css
+// EXTERNAL MODULE: ./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/Section.vue?vue&type=style&index=0&id=e5a74d64&prod&lang=css
+var Sectionvue_type_style_index_0_id_e5a74d64_prod_lang_css = __webpack_require__(944);
+;// ./src/components/Section.vue?vue&type=style&index=0&id=e5a74d64&prod&lang=css
 
 ;// ./src/components/Section.vue
 
@@ -12918,8 +12919,8 @@ var Sectionvue_type_style_index_0_id_2f1fe3a4_prod_lang_css = __webpack_require_
 
 var Section_component = normalizeComponent(
   components_Sectionvue_type_script_lang_js,
-  Sectionvue_type_template_id_2f1fe3a4_render,
-  Sectionvue_type_template_id_2f1fe3a4_staticRenderFns,
+  Sectionvue_type_template_id_e5a74d64_render,
+  Sectionvue_type_template_id_e5a74d64_staticRenderFns,
   false,
   null,
   null,
@@ -13674,6 +13675,7 @@ var TI = /*#__PURE__*/function () {
     // Component-specific props subsets:
     main_section: function main_section() {
       var p = Object.assign({}, this.common_props());
+      console.log("main_section 1", p);
       p.data = this.overlay_subset(this.onchart, 'onchart');
       p.data.push({
         type: this.chart.type || 'Candles',
@@ -13693,7 +13695,6 @@ var TI = /*#__PURE__*/function () {
       // console.log("section_values")
       var p = Object.assign({}, this.main_section);
       p.width = p.layout.grids[id].width;
-      console.log("main_section_values", p.cursor.values[id]);
       return p.cursor.values[id];
     },
     main_section_legend_props: function main_section_legend_props() {
@@ -14182,8 +14183,8 @@ var TI = /*#__PURE__*/function () {
 ;
 var Chart_component = normalizeComponent(
   components_Chartvue_type_script_lang_js,
-  Chartvue_type_template_id_41770e2a_render,
-  Chartvue_type_template_id_41770e2a_staticRenderFns,
+  Chartvue_type_template_id_73eac1b2_render,
+  Chartvue_type_template_id_73eac1b2_staticRenderFns,
   false,
   null,
   null,

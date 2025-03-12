@@ -129,7 +129,7 @@ export default {
      // console.log("section_values")
       let p = Object.assign({}, this.$props.common);
       p.width = p.layout.grids[id].width;
-      console.log("section_values",p.cursor.values[id]);
+      // console.log("section_values",p.cursor.values[id]);
       
       return p.cursor.values[id];
     },

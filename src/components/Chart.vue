@@ -106,6 +106,8 @@ export default {
     // Component-specific props subsets:
     main_section() {
       let p = Object.assign({}, this.common_props())
+      console.log("main_section 1", p);
+      
       p.data = this.overlay_subset(this.onchart, 'onchart')
       p.data.push({
         type: this.chart.type || 'Candles',
@@ -125,8 +127,6 @@ export default {
       // console.log("section_values")
       let p = Object.assign({}, this.main_section);
       p.width = p.layout.grids[id].width;
-      console.log("main_section_values", p.cursor.values[id]);
-
       return p.cursor.values[id];
     },
     main_section_legend_props() {
