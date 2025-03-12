@@ -14,7 +14,7 @@
                 {{ common.exchange_txt }}
             </span>
             <span v-if="show_values && !show_CustomProps">
-                O<span class="t-vue-lspan">{{ open }}</span>
+                O<span class="t-vue-lspan">{{ values }}</span>
                 <!-- H<span class="t-vue-lspan">{{ ohlcv[1] }}</span>
                 L<span class="t-vue-lspan">{{ ohlcv[2] }}</span>
                 C<span class="t-vue-lspan">{{ ohlcv[3] }}</span>
