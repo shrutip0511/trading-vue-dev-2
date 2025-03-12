@@ -3,7 +3,7 @@
   <div class="trading-vue-chart" :style="styles">
     <keyboard ref="keyboard"></keyboard>
     <div class="legend-here">
-      <title-legend-chart 
+      <title-chart-legend 
         ref="legend" 
         :values="main_section_values" 
         :decimalPlace="decimalPlace"
@@ -11,7 +11,7 @@
         :common="main_section_legend_props"
         :grid_id="0" 
         :showTitleChartLegend="showTitleChartLegend"
-      ></title-legend-chart>
+      ></title-chart-legend>
     </div>
     <grid-section v-for="(grid, i) in this._layout.grids" :key="grid.id" ref="sec" :common="section_props(i)"
       :grid_id="i" @register-kb-listener="register_kb" @remove-kb-listener="remove_kb" @range-changed="range_changed"
@@ -41,7 +41,7 @@ import Shaders from '../mixins/shaders.js'
 import DataTrack from '../mixins/datatrack.js'
 import TI from './js/ti_mapping.js'
 import Const from '../stuff/constants.js'
-import TitleLegendChart from './TitleLegendChart.vue'
+import TitleChartLegend from './TitleLegend.vue'
 
 
 export default {
@@ -50,7 +50,7 @@ export default {
     GridSection,
     Botbar,
     Keyboard,
-    TitleLegendChart
+    TitleChartLegend
   },
   mixins: [Shaders, DataTrack],
   props: [

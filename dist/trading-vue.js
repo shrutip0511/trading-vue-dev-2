@@ -4249,20 +4249,6 @@ module.exports = _regeneratorRuntime, module.exports.__esModule = true, module.e
 
 /***/ }),
 
-/***/ 651:
-/***/ ((module, exports, __webpack_require__) => {
-
-// Imports
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(314);
-exports = ___CSS_LOADER_API_IMPORT___(false);
-// Module
-exports.push([module.id, "\n.trading-vue-legend {\r\n    position: relative;\r\n    z-index: 1;\r\n    font-size: 1.25em;\r\n    margin-left: 10px;\r\n    pointer-events: none;\r\n    text-align: left;\r\n    user-select: none;\r\n    font-weight: 300;\n}\n@media (min-resolution: 2x) {\n.trading-vue-legend {\r\n        font-weight: 400;\n}\n}\n.trading-vue-ohlcv {\r\n    pointer-events: none;\r\n    margin-bottom: 0.5em;\n}\n.t-vue-lspan {\r\n    font-variant-numeric: tabular-nums;\r\n    font-size: 0.95em;\r\n    color: #999999;\r\n    /* TODO: move => params */\r\n    margin-left: 0.1em;\r\n    margin-right: 0.2em;\n}\n.t-vue-title {\r\n    font-size: 1.45em;\n}\n.t-vue-exchange{\r\n    font-size: 0.9em;\r\n    font-weight: 600;\r\n    margin-right: 0.25em;\n}\n.t-vue-ind {\r\n    display: flex;\r\n    margin-left: 0.2em;\r\n    margin-bottom: 0.5em;\r\n    font-size: 1.0em;\r\n    margin-top: 0.3em;\n}\n.t-vue-ivalue {\r\n    margin-left: 0.5em;\n}\n.t-vue-unknown {\r\n    color: #999999;\r\n    /* TODO: move => params */\n}\n.tvjs-appear-enter-active,\r\n.tvjs-appear-leave-active {\r\n    transition: all .25s ease;\n}\n.tvjs-appear-enter,\r\n.tvjs-appear-leave-to {\r\n    opacity: 0;\n}\r\n", ""]);
-// Exports
-module.exports = exports;
-
-
-/***/ }),
-
 /***/ 658:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -4294,24 +4280,6 @@ if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
 var add = (__webpack_require__(534)/* ["default"] */ .A)
 var update = add("0f5b62f0", content, false, {});
-// Hot Module Replacement
-if(false) {}
-
-/***/ }),
-
-/***/ 730:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(651);
-if(content.__esModule) content = content.default;
-if(typeof content === 'string') content = [[module.id, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var add = (__webpack_require__(534)/* ["default"] */ .A)
-var update = add("87915b08", content, false, {});
 // Hot Module Replacement
 if(false) {}
 
@@ -5400,8 +5368,8 @@ var MAP_UNIT = {
   map_unit: MAP_UNIT,
   IB_TF_WARN: IB_TF_WARN
 });
-;// ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/Chart.vue?vue&type=template&id=23a5fbc4
-var Chartvue_type_template_id_23a5fbc4_render = function render() {
+;// ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/Chart.vue?vue&type=template&id=549e1048
+var Chartvue_type_template_id_549e1048_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', {
@@ -5411,7 +5379,7 @@ var Chartvue_type_template_id_23a5fbc4_render = function render() {
     ref: "keyboard"
   }), _vm._v(" "), _c('div', {
     staticClass: "legend-here"
-  }, [_c('title-legend-chart', {
+  }, [_c('title-chart-legend', {
     ref: "legend",
     attrs: {
       "values": _vm.main_section_values,
@@ -5462,10 +5430,10 @@ var Chartvue_type_template_id_23a5fbc4_render = function render() {
     }
   }, 'botbar', _vm.botbar_props, false))], 2);
 };
-var Chartvue_type_template_id_23a5fbc4_staticRenderFns = [];
-Chartvue_type_template_id_23a5fbc4_render._withStripped = true;
+var Chartvue_type_template_id_549e1048_staticRenderFns = [];
+Chartvue_type_template_id_549e1048_render._withStripped = true;
 
-;// ./src/components/Chart.vue?vue&type=template&id=23a5fbc4
+;// ./src/components/Chart.vue?vue&type=template&id=549e1048
 
 ;// ./node_modules/@babel/runtime/helpers/esm/arrayWithHoles.js
 function _arrayWithHoles(r) {
@@ -13636,144 +13604,6 @@ var TI = /*#__PURE__*/function () {
   }]);
 }();
 
-;// ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/TitleLegendChart.vue?vue&type=template&id=3be32fe8
-var TitleLegendChartvue_type_template_id_3be32fe8_render = function render() {
-  var _vm$common;
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c('div', {
-    staticClass: "trading-vue-legend title-legend",
-    style: _vm.calc_style
-  }, [_vm.grid_id === 0 && _vm.showTitleChartLegend ? _c('div', {
-    staticClass: "trading-vue-ohlcv",
-    style: {
-      'max-width': _vm.common.width + 'px'
-    }
-  }, [(_vm$common = _vm.common) !== null && _vm$common !== void 0 && _vm$common.showLegendPropsData && _vm.common.showLegendPropsData.length ? [_vm._l(_vm.common.showLegendPropsData, function (n, i) {
-    return _c('b', {
-      key: i
-    }, [_vm._v(_vm._s(n.k) + " : " + _vm._s(n.v) + " ")]);
-  }), _c('br')] : _vm._e(), _vm._v(" "), _vm.show_CustomProps ? _vm._l(_vm.legendTxtConfig, function (n, i) {
-    return _c('span', {
-      key: i,
-      style: n.style
-    }, [_vm._v(_vm._s(n.name) + " ")]);
-  }) : _vm._e(), _vm._v(" "), !_vm.show_CustomProps ? _c('span', {
-    staticClass: "t-vue-title",
-    style: {
-      color: _vm.common.colors.title
-    }
-  }, [_vm._v("\n            " + _vm._s(_vm.common.title_txt) + "\n        ")]) : _vm._e(), _vm._v(" "), _c('span', {
-    staticClass: "t-vue-exchange"
-  }, [_vm._v("\n            " + _vm._s(_vm.common.exchange_txt) + "\n        ")]), _vm._v(" "), _vm.show_values && !_vm.show_CustomProps ? _c('span', [_vm._v("\n            O"), _c('span', {
-    staticClass: "t-vue-lspan"
-  }, [_vm._v(_vm._s(_vm.ohlcv[0]))]), _vm._v("\n            H"), _c('span', {
-    staticClass: "t-vue-lspan"
-  }, [_vm._v(_vm._s(_vm.ohlcv[1]))]), _vm._v("\n            L"), _c('span', {
-    staticClass: "t-vue-lspan"
-  }, [_vm._v(_vm._s(_vm.ohlcv[2]))]), _vm._v("\n            C"), _c('span', {
-    staticClass: "t-vue-lspan"
-  }, [_vm._v(_vm._s(_vm.ohlcv[3]))]), _vm._v("\n            V"), _c('span', {
-    staticClass: "t-vue-lspan"
-  }, [_vm._v(_vm._s(_vm.ohlcv[4]))])]) : _vm._e(), _vm._v(" "), !_vm.show_values ? _c('span', {
-    staticClass: "t-vue-lspan",
-    style: {
-      color: _vm.common.colors.text
-    }
-  }, [_vm._v("\n            " + _vm._s((_vm.common.meta.last || [])[4]) + "\n        ")]) : _vm._e()], 2) : _vm._e()]);
-};
-var TitleLegendChartvue_type_template_id_3be32fe8_staticRenderFns = [];
-TitleLegendChartvue_type_template_id_3be32fe8_render._withStripped = true;
-
-;// ./src/components/TitleLegendChart.vue?vue&type=template&id=3be32fe8
-
-;// ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/TitleLegendChart.vue?vue&type=script&lang=js
-/* harmony default export */ const TitleLegendChartvue_type_script_lang_js = ({
-  name: 'TitleChartLegend',
-  components: {},
-  props: ['common', 'values', 'decimalPlace', 'grid_id', 'meta_props', 'legendDecimal', 'showTitleChartLegend'],
-  computed: {
-    show_CustomProps: function show_CustomProps() {
-      var _this$common;
-      return ((_this$common = this.common) === null || _this$common === void 0 ? void 0 : _this$common.show_CustomProps) || false;
-    },
-    legendTxtConfig: function legendTxtConfig() {
-      var _this$common2;
-      return (_this$common2 = this.common) === null || _this$common2 === void 0 ? void 0 : _this$common2.legendTxtConfig;
-    },
-    ohlcv: function ohlcv() {
-      if (!this.$props.values || !this.$props.values.ohlcv) {
-        return Array(6).fill('n/a');
-      }
-      // const prec = this.layout.prec
-      var prec = this.decimalPlace;
-      // const prec = 3
-      // TODO: main the main legend more customizable
-      var id = this.main_type + '_0';
-      var meta = this.$props.meta_props[id] || {};
-      if (meta.legend) {
-        return (meta.legend() || []).map(function (x) {
-          return x.value;
-        });
-      }
-      if (this.$props.legendDecimal) {
-        return [this.$props.values.ohlcv[1].toFixed(this.$props.values.ohlcv[1] < 1 ? 3 : 2), this.$props.values.ohlcv[2].toFixed(this.$props.values.ohlcv[2] < 1 ? 3 : 2), this.$props.values.ohlcv[3].toFixed(this.$props.values.ohlcv[3] < 1 ? 3 : 2), this.$props.values.ohlcv[4].toFixed(this.$props.values.ohlcv[4] < 1 ? 3 : 2), this.$props.values.ohlcv[5] ? Number(this.$props.values.ohlcv[5].toFixed(0)).toLocaleString('en-AU') : 'n/a'];
-      } else {
-        return [this.$props.values.ohlcv[1].toFixed(prec), this.$props.values.ohlcv[2].toFixed(prec), this.$props.values.ohlcv[3].toFixed(prec), this.$props.values.ohlcv[4].toFixed(prec), this.$props.values.ohlcv[5] ? Number(this.$props.values.ohlcv[5].toFixed(0)).toLocaleString('en-AU') : 'n/a'];
-      }
-    },
-    calc_style: function calc_style() {
-      var top = this.layout.height > 150 ? 3 : 1;
-      var grids = this.$props.common.layout.grids;
-      var w = grids[0] ? grids[0].width : undefined;
-      return {
-        top: "".concat(this.layout.offset + top, "px"),
-        width: "".concat(w - 20, "px")
-      };
-    },
-    layout: function layout() {
-      var id = this.$props.grid_id;
-      return this.$props.common.layout.grids[id];
-    },
-    main_type: function main_type() {
-      var f = this.common.data.find(function (x) {
-        return x.main;
-      });
-      return f ? f.type : undefined;
-    },
-    show_values: function show_values() {
-      return this.common.cursor.mode !== 'explore';
-    }
-  },
-  methods: {}
-});
-;// ./src/components/TitleLegendChart.vue?vue&type=script&lang=js
- /* harmony default export */ const components_TitleLegendChartvue_type_script_lang_js = (TitleLegendChartvue_type_script_lang_js); 
-// EXTERNAL MODULE: ./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/TitleLegendChart.vue?vue&type=style&index=0&id=3be32fe8&prod&lang=css
-var TitleLegendChartvue_type_style_index_0_id_3be32fe8_prod_lang_css = __webpack_require__(730);
-;// ./src/components/TitleLegendChart.vue?vue&type=style&index=0&id=3be32fe8&prod&lang=css
-
-;// ./src/components/TitleLegendChart.vue
-
-
-
-;
-
-
-/* normalize component */
-
-var TitleLegendChart_component = normalizeComponent(
-  components_TitleLegendChartvue_type_script_lang_js,
-  TitleLegendChartvue_type_template_id_3be32fe8_render,
-  TitleLegendChartvue_type_template_id_3be32fe8_staticRenderFns,
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* harmony default export */ const TitleLegendChart = (TitleLegendChart_component.exports);
 ;// ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/Chart.vue?vue&type=script&lang=js
 
 
@@ -13795,7 +13625,7 @@ var TitleLegendChart_component = normalizeComponent(
     GridSection: Section,
     Botbar: components_Botbar,
     Keyboard: Keyboard,
-    TitleLegendChart: TitleLegendChart
+    TitleChartLegend: TitleLegend
   },
   mixins: [shaders, datatrack],
   props: ['title_txt', 'exchange_txt', 'data', 'width', 'height', 'font', 'colors', 'overlays', 'tv_id', 'config', 'buttons', 'toolbar', 'ib', 'applyShaders', 'skin', 'timezone', 'enableZoom', 'enableSideBarBoxValue', 'decimalPlace', 'ignore_OHLC', 'priceLine', 'ignoreNegativeIndex', 'enableCrosshair', 'legendDecimal', 'showSettingsButton', 'showTitleChartLegend', 'isOverlayCollapsed', 'collpaseButton'],
@@ -14351,8 +14181,8 @@ var TitleLegendChart_component = normalizeComponent(
 ;
 var Chart_component = normalizeComponent(
   components_Chartvue_type_script_lang_js,
-  Chartvue_type_template_id_23a5fbc4_render,
-  Chartvue_type_template_id_23a5fbc4_staticRenderFns,
+  Chartvue_type_template_id_549e1048_render,
+  Chartvue_type_template_id_549e1048_staticRenderFns,
   false,
   null,
   null,
