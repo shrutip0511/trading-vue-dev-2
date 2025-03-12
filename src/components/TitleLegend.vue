@@ -23,7 +23,6 @@
             <span v-if="!show_values" class="t-vue-lspan" :style="{ color: common.colors.text }">
                 {{ (common.meta.last || [])[4] }}
             </span>
-            <!-- {{ values }} -->
         </div>
 
     </div>
