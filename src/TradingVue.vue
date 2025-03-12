@@ -8,7 +8,10 @@
   }" @mousedown="mousedown" @mouseleave="mouseleave">
     <toolbar v-if="toolbar" ref="toolbar" v-bind="chart_props" :config="chart_config" @custom-event="custom_event">
     </toolbar>
-    {{ section_values }}
+    <!-- {{ section_values }}
+    {{ decimalPlace }}
+    {{ legendDecimal }}
+    {{ showTitleChartLegend }} -->
     <widgets v-if="controllers.length" ref="widgets" :map="ws" :width="width" :height="height" :tv="this" :dc="data">
     </widgets>
     <chart :enableZoom="enableZoom" :showTitleChartLegend="showTitleChartLegend"

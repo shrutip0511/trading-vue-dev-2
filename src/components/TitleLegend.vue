@@ -1,7 +1,7 @@
 <template>
-    <div class="trading-vue-legend title-legend" :style="calc_style">
+    <div class="trading-vue-legend title-legend" >
         <div v-if="(grid_id === 0 && showTitleChartLegend)" class="trading-vue-ohlcv"
-            :style="{ 'max-width': common.width + 'px' }">
+            >
             <template v-if="common?.showLegendPropsData && common.showLegendPropsData.length">
                 <b v-for="(n, i) in common.showLegendPropsData" :key="i">{{ n.k }} : {{ n.v }}&nbsp;</b><br />
             </template>
