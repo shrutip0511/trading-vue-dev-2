@@ -5400,8 +5400,8 @@ var MAP_UNIT = {
   map_unit: MAP_UNIT,
   IB_TF_WARN: IB_TF_WARN
 });
-;// ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/Chart.vue?vue&type=template&id=303da084
-var Chartvue_type_template_id_303da084_render = function render() {
+;// ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/Chart.vue?vue&type=template&id=fcf3de26
+var Chartvue_type_template_id_fcf3de26_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', {
@@ -5411,7 +5411,7 @@ var Chartvue_type_template_id_303da084_render = function render() {
     ref: "keyboard"
   }), _vm._v(" "), _c('div', {
     staticClass: "legend-here"
-  }, [_c('TitleLegendChart', {
+  }, [_c('title-legend-chart', {
     ref: "legend",
     attrs: {
       "values": _vm.main_section_values,
@@ -5462,10 +5462,10 @@ var Chartvue_type_template_id_303da084_render = function render() {
     }
   }, 'botbar', _vm.botbar_props, false))], 2);
 };
-var Chartvue_type_template_id_303da084_staticRenderFns = [];
-Chartvue_type_template_id_303da084_render._withStripped = true;
+var Chartvue_type_template_id_fcf3de26_staticRenderFns = [];
+Chartvue_type_template_id_fcf3de26_render._withStripped = true;
 
-;// ./src/components/Chart.vue?vue&type=template&id=303da084
+;// ./src/components/Chart.vue?vue&type=template&id=fcf3de26
 
 ;// ./node_modules/@babel/runtime/helpers/esm/arrayWithHoles.js
 function _arrayWithHoles(r) {
@@ -14350,8 +14350,8 @@ var TitleLegendChart_component = normalizeComponent(
 ;
 var Chart_component = normalizeComponent(
   components_Chartvue_type_script_lang_js,
-  Chartvue_type_template_id_303da084_render,
-  Chartvue_type_template_id_303da084_staticRenderFns,
+  Chartvue_type_template_id_fcf3de26_render,
+  Chartvue_type_template_id_fcf3de26_staticRenderFns,
   false,
   null,
   null,
