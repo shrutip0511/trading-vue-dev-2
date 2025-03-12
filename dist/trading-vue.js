@@ -5400,8 +5400,8 @@ var MAP_UNIT = {
   map_unit: MAP_UNIT,
   IB_TF_WARN: IB_TF_WARN
 });
-;// ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/Chart.vue?vue&type=template&id=15afa33c
-var Chartvue_type_template_id_15afa33c_render = function render() {
+;// ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/Chart.vue?vue&type=template&id=303da084
+var Chartvue_type_template_id_303da084_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', {
@@ -5462,10 +5462,10 @@ var Chartvue_type_template_id_15afa33c_render = function render() {
     }
   }, 'botbar', _vm.botbar_props, false))], 2);
 };
-var Chartvue_type_template_id_15afa33c_staticRenderFns = [];
-Chartvue_type_template_id_15afa33c_render._withStripped = true;
+var Chartvue_type_template_id_303da084_staticRenderFns = [];
+Chartvue_type_template_id_303da084_render._withStripped = true;
 
-;// ./src/components/Chart.vue?vue&type=template&id=15afa33c
+;// ./src/components/Chart.vue?vue&type=template&id=303da084
 
 ;// ./node_modules/@babel/runtime/helpers/esm/arrayWithHoles.js
 function _arrayWithHoles(r) {
@@ -13859,14 +13859,14 @@ var TitleLegendChart_component = normalizeComponent(
     main_section_values: function main_section_values() {
       var id = 0;
       // console.log("section_values")
-      var p = Object.assign({}, main_section);
+      var p = Object.assign({}, this.main_section);
       p.width = p.layout.grids[id].width;
       console.log("main_section_values", p.cursor.values[id]);
       return p.cursor.values[id];
     },
     main_section_legend_props: function main_section_legend_props() {
       var id = 0;
-      var p = Object.assign({}, main_section);
+      var p = Object.assign({}, this.main_section);
       var showLegendPropsData = [];
       var showLegendProps = localStorage.getItem('showLegendProps');
       if (showLegendProps) {
@@ -14350,8 +14350,8 @@ var TitleLegendChart_component = normalizeComponent(
 ;
 var Chart_component = normalizeComponent(
   components_Chartvue_type_script_lang_js,
-  Chartvue_type_template_id_15afa33c_render,
-  Chartvue_type_template_id_15afa33c_staticRenderFns,
+  Chartvue_type_template_id_303da084_render,
+  Chartvue_type_template_id_303da084_staticRenderFns,
   false,
   null,
   null,

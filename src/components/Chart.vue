@@ -122,7 +122,7 @@ export default {
     main_section_values() {
       const id = 0;
       // console.log("section_values")
-      let p = Object.assign({}, main_section);
+      let p = Object.assign({}, this.main_section);
       p.width = p.layout.grids[id].width;
       console.log("main_section_values", p.cursor.values[id]);
 
@@ -130,7 +130,7 @@ export default {
     },
     main_section_legend_props() {
       const id = 0;
-      let p = Object.assign({}, main_section);
+      let p = Object.assign({}, this.main_section);
       let showLegendPropsData = [];
       let showLegendProps = localStorage.getItem('showLegendProps')
       if (showLegendProps) {
