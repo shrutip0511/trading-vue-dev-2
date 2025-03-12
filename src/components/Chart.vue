@@ -6,12 +6,12 @@
       <title-chart-legend 
         ref="legend" 
         :values="main_section_values" 
-        :decimalPlace="decimalPlace"
+        :decimalPlace="decimalPlace"        
         :legendDecimal="legendDecimal" 
-        :common="main_section_legend_props"
-        :grid_id="0" 
-        :showTitleChartLegend="showTitleChartLegend"
-      ></title-chart-legend>
+        :common="main_section_legend_props" 
+        :grid_id="0"
+        :meta_props="get_meta_props"
+        :showTitleChartLegend="showTitleChartLegend"></title-chart-legend>
     </div>
     <grid-section v-for="(grid, i) in this._layout.grids" :key="grid.id" ref="sec" :common="section_props(i)"
       :grid_id="i" @register-kb-listener="register_kb" @remove-kb-listener="remove_kb" @range-changed="range_changed"
@@ -145,6 +145,46 @@ export default {
     get_meta_props() {
       return this.meta_props;
     },
+    // ohlcv() {
+    //   if (!this.main_section_values || !this.main_section_values.ohlcv) {
+    //     return Array(6).fill('n/a')
+    //   }
+    //   // const prec = this.layout.prec
+    //   const prec = this.decimalPlace
+    //   // const prec = 3
+    //   // TODO: main the main legend more customizable
+    //   let id = this.main_type + '_0'
+    //   let meta = this.$props.meta_props[id] || {}
+    //   if (meta.legend) {
+    //     return (meta.legend() || []).map(x => x.value)
+    //   }
+
+    //   if (this.$props.legendDecimal) {
+    //     return [
+    //       this.main_section_values.ohlcv[1].toFixed(this.main_section_values.ohlcv[1] < 1 ? 3 : 2),
+    //       this.main_section_values.ohlcv[2].toFixed(this.main_section_values.ohlcv[2] < 1 ? 3 : 2),
+    //       this.main_section_values.ohlcv[3].toFixed(this.main_section_values.ohlcv[3] < 1 ? 3 : 2),
+    //       this.main_section_values.ohlcv[4].toFixed(this.main_section_values.ohlcv[4] < 1 ? 3 : 2),
+    //       this.main_section_values.ohlcv[5] ?
+    //         Number(this.main_section_values.ohlcv[5].toFixed(0)).toLocaleString('en-AU') :
+    //         'n/a'
+    //     ]
+    //   } else {
+    //     return [
+    //       this.main_section_values.ohlcv[1].toFixed(prec),
+    //       this.main_section_values.ohlcv[2].toFixed(prec),
+    //       this.main_section_values.ohlcv[3].toFixed(prec),
+    //       this.main_section_values.ohlcv[4].toFixed(prec),
+    //       this.main_section_values.ohlcv[5] ?
+    //         Number(this.main_section_values.ohlcv[5].toFixed(0)).toLocaleString('en-AU') :
+    //         'n/a'
+    //     ]
+    //   }
+    // },
+    // main_type() {
+    //   let f = this.main_section_legend_props.data.find(x => x.main)
+    //   return f ? f.type : undefined
+    // },
     sub_section() {
       let p = Object.assign({}, this.common_props())
       p.data = this.overlay_subset(this.offchart, 'offchart')

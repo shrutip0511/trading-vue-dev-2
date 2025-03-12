@@ -5368,8 +5368,8 @@ var MAP_UNIT = {
   map_unit: MAP_UNIT,
   IB_TF_WARN: IB_TF_WARN
 });
-;// ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/Chart.vue?vue&type=template&id=549e1048
-var Chartvue_type_template_id_549e1048_render = function render() {
+;// ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/Chart.vue?vue&type=template&id=bac78878
+var Chartvue_type_template_id_bac78878_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', {
@@ -5387,6 +5387,7 @@ var Chartvue_type_template_id_549e1048_render = function render() {
       "legendDecimal": _vm.legendDecimal,
       "common": _vm.main_section_legend_props,
       "grid_id": 0,
+      "meta_props": _vm.get_meta_props,
       "showTitleChartLegend": _vm.showTitleChartLegend
     }
   })], 1), _vm._v(" "), _vm._l(this._layout.grids, function (grid, i) {
@@ -5430,10 +5431,10 @@ var Chartvue_type_template_id_549e1048_render = function render() {
     }
   }, 'botbar', _vm.botbar_props, false))], 2);
 };
-var Chartvue_type_template_id_549e1048_staticRenderFns = [];
-Chartvue_type_template_id_549e1048_render._withStripped = true;
+var Chartvue_type_template_id_bac78878_staticRenderFns = [];
+Chartvue_type_template_id_bac78878_render._withStripped = true;
 
-;// ./src/components/Chart.vue?vue&type=template&id=549e1048
+;// ./src/components/Chart.vue?vue&type=template&id=bac78878
 
 ;// ./node_modules/@babel/runtime/helpers/esm/arrayWithHoles.js
 function _arrayWithHoles(r) {
@@ -13690,6 +13691,45 @@ var TI = /*#__PURE__*/function () {
     get_meta_props: function get_meta_props() {
       return this.meta_props;
     },
+    // ohlcv() {
+    //   if (!this.main_section_values || !this.main_section_values.ohlcv) {
+    //     return Array(6).fill('n/a')
+    //   }
+    //   // const prec = this.layout.prec
+    //   const prec = this.decimalPlace
+    //   // const prec = 3
+    //   // TODO: main the main legend more customizable
+    //   let id = this.main_type + '_0'
+    //   let meta = this.$props.meta_props[id] || {}
+    //   if (meta.legend) {
+    //     return (meta.legend() || []).map(x => x.value)
+    //   }
+    //   if (this.$props.legendDecimal) {
+    //     return [
+    //       this.main_section_values.ohlcv[1].toFixed(this.main_section_values.ohlcv[1] < 1 ? 3 : 2),
+    //       this.main_section_values.ohlcv[2].toFixed(this.main_section_values.ohlcv[2] < 1 ? 3 : 2),
+    //       this.main_section_values.ohlcv[3].toFixed(this.main_section_values.ohlcv[3] < 1 ? 3 : 2),
+    //       this.main_section_values.ohlcv[4].toFixed(this.main_section_values.ohlcv[4] < 1 ? 3 : 2),
+    //       this.main_section_values.ohlcv[5] ?
+    //         Number(this.main_section_values.ohlcv[5].toFixed(0)).toLocaleString('en-AU') :
+    //         'n/a'
+    //     ]
+    //   } else {
+    //     return [
+    //       this.main_section_values.ohlcv[1].toFixed(prec),
+    //       this.main_section_values.ohlcv[2].toFixed(prec),
+    //       this.main_section_values.ohlcv[3].toFixed(prec),
+    //       this.main_section_values.ohlcv[4].toFixed(prec),
+    //       this.main_section_values.ohlcv[5] ?
+    //         Number(this.main_section_values.ohlcv[5].toFixed(0)).toLocaleString('en-AU') :
+    //         'n/a'
+    //     ]
+    //   }
+    // },
+    // main_type() {
+    //   let f = this.main_section_legend_props.data.find(x => x.main)
+    //   return f ? f.type : undefined
+    // },
     sub_section: function sub_section() {
       var p = Object.assign({}, this.common_props());
       p.data = this.overlay_subset(this.offchart, 'offchart');
@@ -14160,8 +14200,8 @@ var TI = /*#__PURE__*/function () {
 ;
 var Chart_component = normalizeComponent(
   components_Chartvue_type_script_lang_js,
-  Chartvue_type_template_id_549e1048_render,
-  Chartvue_type_template_id_549e1048_staticRenderFns,
+  Chartvue_type_template_id_bac78878_render,
+  Chartvue_type_template_id_bac78878_staticRenderFns,
   false,
   null,
   null,
