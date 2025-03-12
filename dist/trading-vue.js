@@ -1,5 +1,5 @@
 /*!
- * TradingVue.JS - v1.0.3 - Tue Mar 11 2025
+ * TradingVue.JS - v1.0.3 - Wed Mar 12 2025
  *     https://github.com/tvjsx/trading-vue-js
  *     Copyright (c) 2019 C451 Code's All Right;
  *     Licensed under the MIT license
@@ -28,6 +28,24 @@ exports.push([module.id, "\n.trading-vue-section {\r\n  height: 0;\r\n  position
 // Exports
 module.exports = exports;
 
+
+/***/ }),
+
+/***/ 53:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(426);
+if(content.__esModule) content = content.default;
+if(typeof content === 'string') content = [[module.id, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = (__webpack_require__(534)/* ["default"] */ .A)
+var update = add("676b049d", content, false, {});
+// Hot Module Replacement
+if(false) {}
 
 /***/ }),
 
@@ -2957,24 +2975,6 @@ if(false) {}
 
 /***/ }),
 
-/***/ 204:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(631);
-if(content.__esModule) content = content.default;
-if(typeof content === 'string') content = [[module.id, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var add = (__webpack_require__(534)/* ["default"] */ .A)
-var update = add("8e4847cc", content, false, {});
-// Hot Module Replacement
-if(false) {}
-
-/***/ }),
-
 /***/ 208:
 /***/ ((module, exports, __webpack_require__) => {
 
@@ -3567,6 +3567,20 @@ module.exports = exports;
 
 /***/ }),
 
+/***/ 426:
+/***/ ((module, exports, __webpack_require__) => {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(314);
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.id, "\n.trading-vue-legend {\r\n    position: relative;\r\n    z-index: 1;\r\n    font-size: 1.25em;\r\n    margin-left: 10px;\r\n    pointer-events: none;\r\n    text-align: left;\r\n    user-select: none;\r\n    font-weight: 300;\n}\n@media (min-resolution: 2x) {\n.trading-vue-legend {\r\n        font-weight: 400;\n}\n}\n.trading-vue-ohlcv {\r\n    pointer-events: none;\r\n    margin-bottom: 0.5em;\n}\n.t-vue-lspan {\r\n    font-variant-numeric: tabular-nums;\r\n    font-size: 0.95em;\r\n    color: #999999;\r\n    /* TODO: move => params */\r\n    margin-left: 0.1em;\r\n    margin-right: 0.2em;\n}\n.t-vue-title {\r\n    font-size: 1.45em;\n}\n.t-vue-exchange{\r\n    font-size: 0.9em;\r\n    font-weight: 600;\r\n    margin-right: 0.25em;\n}\n.t-vue-ind {\r\n    display: flex;\r\n    margin-left: 0.2em;\r\n    margin-bottom: 0.5em;\r\n    font-size: 1.0em;\r\n    margin-top: 0.3em;\n}\n.t-vue-ivalue {\r\n    margin-left: 0.5em;\n}\n.t-vue-unknown {\r\n    color: #999999;\r\n    /* TODO: move => params */\n}\n.tvjs-appear-enter-active,\r\n.tvjs-appear-leave-active {\r\n    transition: all .25s ease;\n}\n.tvjs-appear-enter,\r\n.tvjs-appear-leave-to {\r\n    opacity: 0;\n}\r\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
 /***/ 427:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -3940,20 +3954,6 @@ var add = (__webpack_require__(534)/* ["default"] */ .A)
 var update = add("a139135c", content, false, {});
 // Hot Module Replacement
 if(false) {}
-
-/***/ }),
-
-/***/ 631:
-/***/ ((module, exports, __webpack_require__) => {
-
-// Imports
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(314);
-exports = ___CSS_LOADER_API_IMPORT___(false);
-// Module
-exports.push([module.id, "\n.trading-vue-legend {\r\n    position: relative;\r\n    z-index: 1;\r\n    font-size: 1.25em;\r\n    margin-left: 10px;\r\n    pointer-events: none;\r\n    text-align: left;\r\n    user-select: none;\r\n    font-weight: 300;\n}\n@media (min-resolution: 2x) {\n.trading-vue-legend {\r\n        font-weight: 400;\n}\n}\n.trading-vue-ohlcv {\r\n    pointer-events: none;\r\n    margin-bottom: 0.5em;\n}\n.t-vue-lspan {\r\n    font-variant-numeric: tabular-nums;\r\n    font-size: 0.95em;\r\n    color: #999999;\r\n    /* TODO: move => params */\r\n    margin-left: 0.1em;\r\n    margin-right: 0.2em;\n}\n.t-vue-title {\r\n    font-size: 1.45em;\n}\n.t-vue-exchange{\r\n    font-size: 0.9em;\r\n    font-weight: 600;\r\n    margin-right: 0.25em;\n}\n.t-vue-ind {\r\n    display: flex;\r\n    margin-left: 0.2em;\r\n    margin-bottom: 0.5em;\r\n    font-size: 1.0em;\r\n    margin-top: 0.3em;\n}\n.t-vue-ivalue {\r\n    margin-left: 0.5em;\n}\n.t-vue-unknown {\r\n    color: #999999;\r\n    /* TODO: move => params */\n}\n.tvjs-appear-enter-active,\r\n.tvjs-appear-leave-active {\r\n    transition: all .25s ease;\n}\n.tvjs-appear-enter,\r\n.tvjs-appear-leave-to {\r\n    opacity: 0;\n}\r\n", ""]);
-// Exports
-module.exports = exports;
-
 
 /***/ }),
 
@@ -12476,8 +12476,8 @@ var Legend_component = normalizeComponent(
 )
 
 /* harmony default export */ const Legend = (Legend_component.exports);
-;// ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/TitleLegend.vue?vue&type=template&id=e4643628
-var TitleLegendvue_type_template_id_e4643628_render = function render() {
+;// ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/TitleLegend.vue?vue&type=template&id=6b72656c
+var TitleLegendvue_type_template_id_6b72656c_render = function render() {
   var _vm$common;
   var _vm = this,
     _c = _vm._self._c;
@@ -12522,40 +12522,24 @@ var TitleLegendvue_type_template_id_e4643628_render = function render() {
     }
   }, [_vm._v("\n            " + _vm._s((_vm.common.meta.last || [])[4]) + "\n        ")]) : _vm._e()], 2) : _vm._e()]);
 };
-var TitleLegendvue_type_template_id_e4643628_staticRenderFns = [];
-TitleLegendvue_type_template_id_e4643628_render._withStripped = true;
+var TitleLegendvue_type_template_id_6b72656c_staticRenderFns = [];
+TitleLegendvue_type_template_id_6b72656c_render._withStripped = true;
 
-;// ./src/components/TitleLegend.vue?vue&type=template&id=e4643628
+;// ./src/components/TitleLegend.vue?vue&type=template&id=6b72656c
 
 ;// ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/TitleLegend.vue?vue&type=script&lang=js
-
-
-
-
-var TitleLegendvue_type_script_lang_js_settingPng = icons_namespaceObject["gear.png"];
 /* harmony default export */ const TitleLegendvue_type_script_lang_js = ({
   name: 'TitleChartLegend',
-  components: {
-    LegendButton: LegendButton,
-    ButtonGroup: ButtonGroup,
-    Spinner: Spinner
-  },
+  components: {},
   props: ['common', 'values', 'decimalPlace', 'grid_id', 'meta_props', 'legendDecimal', 'showTitleChartLegend'],
   computed: {
     show_CustomProps: function show_CustomProps() {
       var _this$common;
       return ((_this$common = this.common) === null || _this$common === void 0 ? void 0 : _this$common.show_CustomProps) || false;
     },
-    show_Settings: function show_Settings() {
-      var _this$common2;
-      return ((_this$common2 = this.common) === null || _this$common2 === void 0 ? void 0 : _this$common2.showSettingsMain) || false;
-    },
-    settingIcon: function settingIcon() {
-      return TitleLegendvue_type_script_lang_js_settingPng;
-    },
     legendTxtConfig: function legendTxtConfig() {
-      var _this$common3;
-      return (_this$common3 = this.common) === null || _this$common3 === void 0 ? void 0 : _this$common3.legendTxtConfig;
+      var _this$common2;
+      return (_this$common2 = this.common) === null || _this$common2 === void 0 ? void 0 : _this$common2.legendTxtConfig;
     },
     ohlcv: function ohlcv() {
       if (!this.$props.values || !this.$props.values.ohlcv) {
@@ -12578,29 +12562,6 @@ var TitleLegendvue_type_script_lang_js_settingPng = icons_namespaceObject["gear.
         return [this.$props.values.ohlcv[1].toFixed(prec), this.$props.values.ohlcv[2].toFixed(prec), this.$props.values.ohlcv[3].toFixed(prec), this.$props.values.ohlcv[4].toFixed(prec), this.$props.values.ohlcv[5] ? Number(this.$props.values.ohlcv[5].toFixed(0)).toLocaleString('en-AU') : 'n/a'];
       }
     },
-    // TODO: add support for { grid: { id : N }}
-    indicators: function indicators() {
-      var _this = this;
-      var values = this.$props.values;
-      var f = this.format;
-      var types = {};
-      return this.json_data.filter(function (x) {
-        return x.settings.legend !== false && !x.main;
-      }).map(function (x) {
-        if (!(x.type in types)) types[x.type] = 0;
-        var id = x.type + "_".concat(types[x.type]++);
-        return {
-          v: 'display' in x.settings ? x.settings.display : true,
-          name: x.name || id,
-          index: (_this.off_data || _this.json_data).indexOf(x),
-          id: id,
-          values: values ? f(id, values) : _this.n_a(1),
-          unk: !(id in (_this.$props.meta_props || {})),
-          loading: x.loading,
-          showLegendButtons: 'legendButtons' in x.settings ? x.settings.legendButtons : true
-        };
-      });
-    },
     calc_style: function calc_style() {
       var top = this.layout.height > 150 ? 3 : 1;
       var grids = this.$props.common.layout.grids;
@@ -12614,12 +12575,6 @@ var TitleLegendvue_type_script_lang_js_settingPng = icons_namespaceObject["gear.
       var id = this.$props.grid_id;
       return this.$props.common.layout.grids[id];
     },
-    json_data: function json_data() {
-      return this.$props.common.data;
-    },
-    off_data: function off_data() {
-      return this.$props.common.offchart;
-    },
     main_type: function main_type() {
       var f = this.common.data.find(function (x) {
         return x.main;
@@ -12630,42 +12585,13 @@ var TitleLegendvue_type_script_lang_js_settingPng = icons_namespaceObject["gear.
       return this.common.cursor.mode !== 'explore';
     }
   },
-  methods: {
-    format: function format(id, values) {
-      var meta = this.$props.meta_props[id] || {};
-      // Matches Overlay.data_colors with the data values
-      // (see Spline.vue)
-      if (!values[id]) return this.n_a(1);
-
-      // Custom formatter
-      if (meta.legend) return meta.legend(values[id]);
-      return values[id].slice(1).map(function (x, i) {
-        var cs = meta.data_colors ? meta.data_colors() : [];
-        if (typeof x == 'number') {
-          // Show 8 digits for small values
-          x = x.toFixed(Math.abs(x) > 0.001 ? 4 : 8);
-        }
-        return {
-          value: x,
-          color: cs ? cs[i % cs.length] : undefined
-        };
-      });
-    },
-    n_a: function n_a(len) {
-      return Array(len).fill({
-        value: 'n/a'
-      });
-    },
-    button_click: function button_click(event) {
-      this.$emit('legend-button-click', event);
-    }
-  }
+  methods: {}
 });
 ;// ./src/components/TitleLegend.vue?vue&type=script&lang=js
  /* harmony default export */ const components_TitleLegendvue_type_script_lang_js = (TitleLegendvue_type_script_lang_js); 
-// EXTERNAL MODULE: ./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/TitleLegend.vue?vue&type=style&index=0&id=e4643628&prod&lang=css
-var TitleLegendvue_type_style_index_0_id_e4643628_prod_lang_css = __webpack_require__(204);
-;// ./src/components/TitleLegend.vue?vue&type=style&index=0&id=e4643628&prod&lang=css
+// EXTERNAL MODULE: ./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/TitleLegend.vue?vue&type=style&index=0&id=6b72656c&prod&lang=css
+var TitleLegendvue_type_style_index_0_id_6b72656c_prod_lang_css = __webpack_require__(53);
+;// ./src/components/TitleLegend.vue?vue&type=style&index=0&id=6b72656c&prod&lang=css
 
 ;// ./src/components/TitleLegend.vue
 
@@ -12678,8 +12604,8 @@ var TitleLegendvue_type_style_index_0_id_e4643628_prod_lang_css = __webpack_requ
 
 var TitleLegend_component = normalizeComponent(
   components_TitleLegendvue_type_script_lang_js,
-  TitleLegendvue_type_template_id_e4643628_render,
-  TitleLegendvue_type_template_id_e4643628_staticRenderFns,
+  TitleLegendvue_type_template_id_6b72656c_render,
+  TitleLegendvue_type_template_id_6b72656c_staticRenderFns,
   false,
   null,
   null,
