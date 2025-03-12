@@ -275,6 +275,12 @@ export default {
       },
       deep: true
     },
+    main_section: {
+      handler: function (n, p) {
+        this.$emit("updateMainSection", n);
+      },
+      deep: true
+    },
   },
   created() {
 

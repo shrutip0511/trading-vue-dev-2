@@ -8,7 +8,7 @@
   }" @mousedown="mousedown" @mouseleave="mouseleave">
     <toolbar v-if="toolbar" ref="toolbar" v-bind="chart_props" :config="chart_config" @custom-event="custom_event">
     </toolbar>
-    {{ section_values }}
+    {{ main_section_values }}
     <widgets v-if="controllers.length" ref="widgets" :map="ws" :width="width" :height="height" :tv="this" :dc="data">
     </widgets>
     <chart :enableZoom="enableZoom" :showTitleChartLegend="showTitleChartLegend"
@@ -18,7 +18,7 @@
       :ignoreNegativeIndex="ignoreNegativeIndex" :ignore_OHLC="ignore_OHLC" :key="reset" ref="chart"
       v-bind="chart_props" :tv_id="id" :config="chart_config" @custom-event="custom_event"
       @range-changed="range_changed" @chart_data_changed="chart_data_changed" @sidebar-transform="sidebar_transform"
-      @legend-button-click="legend_button" @on-collapse-change="collapse_button" @updateSection="updateSection">
+      @legend-button-click="legend_button" @on-collapse-change="collapse_button" @updateSection="updateSection" @updateMainSection="updateMainSection">
     </chart>
     <transition name="tvjs-drift">
       <the-tip v-if="tip" :data="tip" @remove-me="tip = null" />
@@ -252,7 +252,7 @@ export default {
     },
   },
   data() {
-    return { reset: 0, tip: null, section_values: null };
+    return { reset: 0, tip: null, section_values: null, main_section_values: null };
   },
   computed: {
     // Copy a subset of TradingVue props
@@ -323,6 +323,9 @@ export default {
   methods: {
     updateSection(value) {
       this.section_values = value;
+    },
+    updateMainSection(value) {
+      this.main_section_values = value;
     },
     chart_data_changed(flag) {
       this.$emit("chart_data_changed", flag);
