@@ -78,21 +78,10 @@ export default {
                 ]
             }
         },
-        calc_style() {
-            let top = this.layout.height > 150 ? 3 : 1
-            let grids = this.$props.common.layout.grids
-            let w = grids[0] ? grids[0].width : undefined
-            return {
-                top: `${this.layout.offset + top}px`,
-                width: `${w - 20}px`
-            }
-        },
-        layout() {
-            const id = this.$props.grid_id
-            return this.$props.common.layout.grids[id]
-        },
         main_type() {
+            
             let f = this.common.data.find(x => x.main)
+            console.log("main_type", f);
             return f ? f.type : undefined
         },
         show_values() {
