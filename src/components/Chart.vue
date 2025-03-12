@@ -49,7 +49,8 @@ export default {
   components: {
     GridSection,
     Botbar,
-    Keyboard
+    Keyboard,
+    TitleLegendChart
   },
   mixins: [Shaders, DataTrack],
   props: [

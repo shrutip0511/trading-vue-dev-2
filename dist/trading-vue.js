@@ -5400,8 +5400,8 @@ var MAP_UNIT = {
   map_unit: MAP_UNIT,
   IB_TF_WARN: IB_TF_WARN
 });
-;// ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/Chart.vue?vue&type=template&id=fcf3de26
-var Chartvue_type_template_id_fcf3de26_render = function render() {
+;// ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/Chart.vue?vue&type=template&id=23a5fbc4
+var Chartvue_type_template_id_23a5fbc4_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', {
@@ -5462,10 +5462,10 @@ var Chartvue_type_template_id_fcf3de26_render = function render() {
     }
   }, 'botbar', _vm.botbar_props, false))], 2);
 };
-var Chartvue_type_template_id_fcf3de26_staticRenderFns = [];
-Chartvue_type_template_id_fcf3de26_render._withStripped = true;
+var Chartvue_type_template_id_23a5fbc4_staticRenderFns = [];
+Chartvue_type_template_id_23a5fbc4_render._withStripped = true;
 
-;// ./src/components/Chart.vue?vue&type=template&id=fcf3de26
+;// ./src/components/Chart.vue?vue&type=template&id=23a5fbc4
 
 ;// ./node_modules/@babel/runtime/helpers/esm/arrayWithHoles.js
 function _arrayWithHoles(r) {
@@ -13794,7 +13794,8 @@ var TitleLegendChart_component = normalizeComponent(
   components: {
     GridSection: Section,
     Botbar: components_Botbar,
-    Keyboard: Keyboard
+    Keyboard: Keyboard,
+    TitleLegendChart: TitleLegendChart
   },
   mixins: [shaders, datatrack],
   props: ['title_txt', 'exchange_txt', 'data', 'width', 'height', 'font', 'colors', 'overlays', 'tv_id', 'config', 'buttons', 'toolbar', 'ib', 'applyShaders', 'skin', 'timezone', 'enableZoom', 'enableSideBarBoxValue', 'decimalPlace', 'ignore_OHLC', 'priceLine', 'ignoreNegativeIndex', 'enableCrosshair', 'legendDecimal', 'showSettingsButton', 'showTitleChartLegend', 'isOverlayCollapsed', 'collpaseButton'],
@@ -14350,8 +14351,8 @@ var TitleLegendChart_component = normalizeComponent(
 ;
 var Chart_component = normalizeComponent(
   components_Chartvue_type_script_lang_js,
-  Chartvue_type_template_id_fcf3de26_render,
-  Chartvue_type_template_id_fcf3de26_staticRenderFns,
+  Chartvue_type_template_id_23a5fbc4_render,
+  Chartvue_type_template_id_23a5fbc4_staticRenderFns,
   false,
   null,
   null,
