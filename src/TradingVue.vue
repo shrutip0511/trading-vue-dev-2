@@ -9,6 +9,7 @@
     <toolbar v-if="toolbar" ref="toolbar" v-bind="chart_props" :config="chart_config" @custom-event="custom_event">
     </toolbar>
     {{ section_values }}
+    {{ meta_values }}
     <!-- {{ decimalPlace }}
     {{ legendDecimal }}
     {{ showTitleChartLegend }} -->
