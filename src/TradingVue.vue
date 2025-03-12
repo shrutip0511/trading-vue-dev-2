@@ -326,7 +326,7 @@ export default {
       let p = Object.assign({});
       p.colors = Object.assign({}, this.$props.colors || this.colorpack);
       p.title_txt = this.decubed.chart.name || this.$props.titleTxt
-      p.exchange_txt = this.$props.this.$props.exchangeTxt
+      p.exchange_txt = this.$props.exchangeTxt
 
       let res = [];
       let showLegendPropsData = [];
