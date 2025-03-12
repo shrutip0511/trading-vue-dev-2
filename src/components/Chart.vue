@@ -2,6 +2,7 @@
   <!-- Chart components combined together -->
   <div class="trading-vue-chart" :style="styles">
     <keyboard ref="keyboard"></keyboard>
+    <div class="legend-here"></div>
     <grid-section v-for="(grid, i) in this._layout.grids" :key="grid.id" ref="sec" :common="section_props(i)"
       :grid_id="i" @register-kb-listener="register_kb" @remove-kb-listener="remove_kb" @range-changed="range_changed"
       @cursor-changed="cursor_changed" @cursor-locked="cursor_locked" @sidebar-transform="set_ytransform"
