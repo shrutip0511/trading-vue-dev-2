@@ -275,6 +275,12 @@ export default {
       },
       deep: true
     },
+    meta: {
+      handler: function (n, p) {
+        this.$emit("updateMeta", n);
+      },
+      deep: true
+    },
   },
   created() {
 

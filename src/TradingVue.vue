@@ -8,10 +8,11 @@
   }" @mousedown="mousedown" @mouseleave="mouseleave">
     <toolbar v-if="toolbar" ref="toolbar" v-bind="chart_props" :config="chart_config" @custom-event="custom_event">
     </toolbar>
-    <!-- {{ section_values }}
-    {{ decimalPlace }}
+    {{ section_values }}
+    <!-- {{ decimalPlace }}
     {{ legendDecimal }}
     {{ showTitleChartLegend }} -->
+     {{ main_section_legend_props }}
     <widgets v-if="controllers.length" ref="widgets" :map="ws" :width="width" :height="height" :tv="this" :dc="data">
     </widgets>
     <chart :enableZoom="enableZoom" :showTitleChartLegend="showTitleChartLegend"
@@ -21,7 +22,7 @@
       :ignoreNegativeIndex="ignoreNegativeIndex" :ignore_OHLC="ignore_OHLC" :key="reset" ref="chart"
       v-bind="chart_props" :tv_id="id" :config="chart_config" @custom-event="custom_event"
       @range-changed="range_changed" @chart_data_changed="chart_data_changed" @sidebar-transform="sidebar_transform"
-      @legend-button-click="legend_button" @on-collapse-change="collapse_button" @updateSection="updateSection">
+      @legend-button-click="legend_button" @on-collapse-change="collapse_button" @updateSection="updateSection" @updateMeta="updateMeta">
     </chart>
     <transition name="tvjs-drift">
       <the-tip v-if="tip" :data="tip" @remove-me="tip = null" />
@@ -255,7 +256,7 @@ export default {
     },
   },
   data() {
-    return { reset: 0, tip: null, section_values: null };
+    return { reset: 0, tip: null, section_values: null, meta_values: null };
   },
   computed: {
     // Copy a subset of TradingVue props
@@ -317,7 +318,37 @@ export default {
     },
     auto_y_axis() {
       return this.$refs.chart?.auto_y_axis || true
-    }
+    },
+
+
+    main_section_legend_props() {
+      const id = 0;
+      let p = Object.assign({});
+      p.colors = Object.assign({}, this.$props.colors || this.colorpack);
+      p.title_txt = this.decubed.chart.name || this.$props.titleTxt
+      p.exchange_txt = this.$props.this.$props.exchangeTxt
+
+      let res = [];
+      let showLegendPropsData = [];
+      let legendTxtConfig = localStorage.getItem('legendTxtConfig')
+      let showLegendProps = localStorage.getItem('showLegendProps')
+      if (this.ignore_OHLC && legendTxtConfig) {
+        res = JSON.parse(legendTxtConfig)
+      }
+      if (showLegendProps) {
+        showLegendPropsData = JSON.parse(showLegendProps)
+        if (Array.isArray(showLegendPropsData) && showLegendPropsData.length > 0) {
+          p.showLegendPropsData = showLegendPropsData
+        }
+      }
+
+      let chartType = this.decubed.chart.type || 'Candles'
+      let show_CustomProps = this.ignore_OHLC.includes(chartType)
+      p.legendTxtConfig = res
+      p.show_CustomProps = show_CustomProps
+      p.meta = meta_values
+      return p;
+    },
   },
   beforeDestroy() {
     this.custom_event({ event: "before-destroy" });
@@ -326,6 +357,9 @@ export default {
   methods: {
     updateSection(value) {
       this.section_values = value;
+    },
+    updateMeta(value) {
+      this.meta_values = value;
     },
     chart_data_changed(flag) {
       this.$emit("chart_data_changed", flag);
