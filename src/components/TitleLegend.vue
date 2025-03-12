@@ -14,6 +14,7 @@
                 {{ common.exchange_txt }}
             </span>
             <span v-if="show_values && !show_CustomProps">
+                {{ values }}
                 O<span class="t-vue-lspan">{{ ohlcv[0] }}</span>
                 H<span class="t-vue-lspan">{{ ohlcv[1] }}</span>
                 L<span class="t-vue-lspan">{{ ohlcv[2] }}</span>
@@ -24,7 +25,6 @@
                 {{ (common.meta.last || [])[4] }}
             </span>
         </div>
-        {{ values }}
 
     </div>
 </template>
@@ -36,20 +36,6 @@ export default {
     props: [
         'common', 'values', 'decimalPlace', 'grid_id', 'meta_props', 'legendDecimal', 'showTitleChartLegend',
     ],
-    data(){
-        return{
-            localValues : this.values
-        }
-    },
-    watch: {
-        values: {
-            deep: true,
-            handler(newVal) {
-                console.log('Values changed:', newVal);
-                this.localValues = { ...newVal }; // Ensure reactivity
-            }
-        }
-    },
     computed: {
         show_CustomProps() {
             return this.common?.show_CustomProps || false;
@@ -58,9 +44,9 @@ export default {
             return this.common?.legendTxtConfig;
         },
         ohlcv() {
-            console.log('this.localValues', this.localValues);
+            console.log('this.$props.values', this.$props.values);
             
-            if (!this.localValues || !this.localValues.ohlcv) {
+            if (!this.$props.values || !this.$props.values.ohlcv) {
                 return Array(6).fill('n/a')
             }
             // const prec = this.layout.prec
@@ -75,22 +61,22 @@ export default {
 
             if (this.$props.legendDecimal) {
                 return [
-                    this.localValues.ohlcv[1].toFixed(this.localValues.ohlcv[1] < 1 ? 3 : 2),
-                    this.localValues.ohlcv[2].toFixed(this.localValues.ohlcv[2] < 1 ? 3 : 2),
-                    this.localValues.ohlcv[3].toFixed(this.localValues.ohlcv[3] < 1 ? 3 : 2),
-                    this.localValues.ohlcv[4].toFixed(this.localValues.ohlcv[4] < 1 ? 3 : 2),
-                    this.localValues.ohlcv[5] ?
-                        Number(this.localValues.ohlcv[5].toFixed(0)).toLocaleString('en-AU') :
+                    this.$props.values.ohlcv[1].toFixed(this.$props.values.ohlcv[1] < 1 ? 3 : 2),
+                    this.$props.values.ohlcv[2].toFixed(this.$props.values.ohlcv[2] < 1 ? 3 : 2),
+                    this.$props.values.ohlcv[3].toFixed(this.$props.values.ohlcv[3] < 1 ? 3 : 2),
+                    this.$props.values.ohlcv[4].toFixed(this.$props.values.ohlcv[4] < 1 ? 3 : 2),
+                    this.$props.values.ohlcv[5] ?
+                        Number(this.$props.values.ohlcv[5].toFixed(0)).toLocaleString('en-AU') :
                         'n/a'
                 ]
             } else {
                 return [
-                    this.localValues.ohlcv[1].toFixed(prec),
-                    this.localValues.ohlcv[2].toFixed(prec),
-                    this.localValues.ohlcv[3].toFixed(prec),
-                    this.localValues.ohlcv[4].toFixed(prec),
-                    this.localValues.ohlcv[5] ?
-                        Number(this.localValues.ohlcv[5].toFixed(0)).toLocaleString('en-AU') :
+                    this.$props.values.ohlcv[1].toFixed(prec),
+                    this.$props.values.ohlcv[2].toFixed(prec),
+                    this.$props.values.ohlcv[3].toFixed(prec),
+                    this.$props.values.ohlcv[4].toFixed(prec),
+                    this.$props.values.ohlcv[5] ?
+                        Number(this.$props.values.ohlcv[5].toFixed(0)).toLocaleString('en-AU') :
                         'n/a'
                 ]
             }

@@ -3435,20 +3435,6 @@ function toComment(sourceMap) {
 
 /***/ }),
 
-/***/ 372:
-/***/ ((module, exports, __webpack_require__) => {
-
-// Imports
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(314);
-exports = ___CSS_LOADER_API_IMPORT___(false);
-// Module
-exports.push([module.id, "\n.trading-vue-legend {\r\n    position: relative;\r\n    z-index: 1;\r\n    font-size: 1.25em;\r\n    margin-left: 10px;\r\n    pointer-events: none;\r\n    text-align: left;\r\n    user-select: none;\r\n    font-weight: 300;\n}\n@media (min-resolution: 2x) {\n.trading-vue-legend {\r\n        font-weight: 400;\n}\n}\n.trading-vue-ohlcv {\r\n    pointer-events: none;\r\n    margin-bottom: 0.5em;\n}\n.t-vue-lspan {\r\n    font-variant-numeric: tabular-nums;\r\n    font-size: 0.95em;\r\n    color: #999999;\r\n    /* TODO: move => params */\r\n    margin-left: 0.1em;\r\n    margin-right: 0.2em;\n}\n.t-vue-title {\r\n    font-size: 1.45em;\n}\n.t-vue-exchange{\r\n    font-size: 0.9em;\r\n    font-weight: 600;\r\n    margin-right: 0.25em;\n}\n.t-vue-ind {\r\n    display: flex;\r\n    margin-left: 0.2em;\r\n    margin-bottom: 0.5em;\r\n    font-size: 1.0em;\r\n    margin-top: 0.3em;\n}\n.t-vue-ivalue {\r\n    margin-left: 0.5em;\n}\n.t-vue-unknown {\r\n    color: #999999;\r\n    /* TODO: move => params */\n}\n.tvjs-appear-enter-active,\r\n.tvjs-appear-leave-active {\r\n    transition: all .25s ease;\n}\n.tvjs-appear-enter,\r\n.tvjs-appear-leave-to {\r\n    opacity: 0;\n}\r\n", ""]);
-// Exports
-module.exports = exports;
-
-
-/***/ }),
-
 /***/ 392:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -4249,6 +4235,20 @@ module.exports = _regeneratorRuntime, module.exports.__esModule = true, module.e
 
 /***/ }),
 
+/***/ 679:
+/***/ ((module, exports, __webpack_require__) => {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(314);
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.id, "\n.trading-vue-legend {\r\n    position: relative;\r\n    z-index: 1;\r\n    font-size: 1.25em;\r\n    margin-left: 10px;\r\n    pointer-events: none;\r\n    text-align: left;\r\n    user-select: none;\r\n    font-weight: 300;\n}\n@media (min-resolution: 2x) {\n.trading-vue-legend {\r\n        font-weight: 400;\n}\n}\n.trading-vue-ohlcv {\r\n    pointer-events: none;\r\n    margin-bottom: 0.5em;\n}\n.t-vue-lspan {\r\n    font-variant-numeric: tabular-nums;\r\n    font-size: 0.95em;\r\n    color: #999999;\r\n    /* TODO: move => params */\r\n    margin-left: 0.1em;\r\n    margin-right: 0.2em;\n}\n.t-vue-title {\r\n    font-size: 1.45em;\n}\n.t-vue-exchange{\r\n    font-size: 0.9em;\r\n    font-weight: 600;\r\n    margin-right: 0.25em;\n}\n.t-vue-ind {\r\n    display: flex;\r\n    margin-left: 0.2em;\r\n    margin-bottom: 0.5em;\r\n    font-size: 1.0em;\r\n    margin-top: 0.3em;\n}\n.t-vue-ivalue {\r\n    margin-left: 0.5em;\n}\n.t-vue-unknown {\r\n    color: #999999;\r\n    /* TODO: move => params */\n}\n.tvjs-appear-enter-active,\r\n.tvjs-appear-leave-active {\r\n    transition: all .25s ease;\n}\n.tvjs-appear-enter,\r\n.tvjs-appear-leave-to {\r\n    opacity: 0;\n}\r\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
 /***/ 688:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -4294,24 +4294,6 @@ function _typeof(o) {
   }, module.exports.__esModule = true, module.exports["default"] = module.exports, _typeof(o);
 }
 module.exports = _typeof, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-
-/***/ 755:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(372);
-if(content.__esModule) content = content.default;
-if(typeof content === 'string') content = [[module.id, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var add = (__webpack_require__(534)/* ["default"] */ .A)
-var update = add("42cf1cde", content, false, {});
-// Hot Module Replacement
-if(false) {}
 
 /***/ }),
 
@@ -4384,6 +4366,24 @@ exports.push([module.id, "\r\n/* Anit-boostrap tactix */\n.trading-vue *,\r\n::a
 // Exports
 module.exports = exports;
 
+
+/***/ }),
+
+/***/ 872:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(679);
+if(content.__esModule) content = content.default;
+if(typeof content === 'string') content = [[module.id, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = (__webpack_require__(534)/* ["default"] */ .A)
+var update = add("6d16ab66", content, false, {});
+// Hot Module Replacement
+if(false) {}
 
 /***/ }),
 
@@ -12483,8 +12483,8 @@ var Legend_component = normalizeComponent(
 )
 
 /* harmony default export */ const Legend = (Legend_component.exports);
-;// ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/TitleLegend.vue?vue&type=template&id=65e3b5dc
-var TitleLegendvue_type_template_id_65e3b5dc_render = function render() {
+;// ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/TitleLegend.vue?vue&type=template&id=37c0ed93
+var TitleLegendvue_type_template_id_37c0ed93_render = function render() {
   var _vm$common;
   var _vm = this,
     _c = _vm._self._c;
@@ -12512,7 +12512,7 @@ var TitleLegendvue_type_template_id_65e3b5dc_render = function render() {
     }
   }, [_vm._v("\n            " + _vm._s(_vm.common.title_txt) + "\n        ")]) : _vm._e(), _vm._v(" "), _c('span', {
     staticClass: "t-vue-exchange"
-  }, [_vm._v("\n            " + _vm._s(_vm.common.exchange_txt) + "\n        ")]), _vm._v(" "), _vm.show_values && !_vm.show_CustomProps ? _c('span', [_vm._v("\n            O"), _c('span', {
+  }, [_vm._v("\n            " + _vm._s(_vm.common.exchange_txt) + "\n        ")]), _vm._v(" "), _vm.show_values && !_vm.show_CustomProps ? _c('span', [_vm._v("\n            " + _vm._s(_vm.values) + "\n            O"), _c('span', {
     staticClass: "t-vue-lspan"
   }, [_vm._v(_vm._s(_vm.ohlcv[0]))]), _vm._v("\n            H"), _c('span', {
     staticClass: "t-vue-lspan"
@@ -12527,35 +12527,18 @@ var TitleLegendvue_type_template_id_65e3b5dc_render = function render() {
     style: {
       color: _vm.common.colors.text
     }
-  }, [_vm._v("\n            " + _vm._s((_vm.common.meta.last || [])[4]) + "\n        ")]) : _vm._e()], 2) : _vm._e(), _vm._v("\n    " + _vm._s(_vm.values) + "\n\n")]);
+  }, [_vm._v("\n            " + _vm._s((_vm.common.meta.last || [])[4]) + "\n        ")]) : _vm._e()], 2) : _vm._e()]);
 };
-var TitleLegendvue_type_template_id_65e3b5dc_staticRenderFns = [];
-TitleLegendvue_type_template_id_65e3b5dc_render._withStripped = true;
+var TitleLegendvue_type_template_id_37c0ed93_staticRenderFns = [];
+TitleLegendvue_type_template_id_37c0ed93_render._withStripped = true;
 
-;// ./src/components/TitleLegend.vue?vue&type=template&id=65e3b5dc
+;// ./src/components/TitleLegend.vue?vue&type=template&id=37c0ed93
 
 ;// ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/TitleLegend.vue?vue&type=script&lang=js
-
-function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
-function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
 /* harmony default export */ const TitleLegendvue_type_script_lang_js = ({
   name: 'TitleChartLegend',
   components: {},
   props: ['common', 'values', 'decimalPlace', 'grid_id', 'meta_props', 'legendDecimal', 'showTitleChartLegend'],
-  data: function data() {
-    return {
-      localValues: this.values
-    };
-  },
-  watch: {
-    values: {
-      deep: true,
-      handler: function handler(newVal) {
-        console.log('Values changed:', newVal);
-        this.localValues = _objectSpread({}, newVal); // Ensure reactivity
-      }
-    }
-  },
   computed: {
     show_CustomProps: function show_CustomProps() {
       var _this$common;
@@ -12566,8 +12549,8 @@ function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t =
       return (_this$common2 = this.common) === null || _this$common2 === void 0 ? void 0 : _this$common2.legendTxtConfig;
     },
     ohlcv: function ohlcv() {
-      console.log('this.localValues', this.localValues);
-      if (!this.localValues || !this.localValues.ohlcv) {
+      console.log('this.$props.values', this.$props.values);
+      if (!this.$props.values || !this.$props.values.ohlcv) {
         return Array(6).fill('n/a');
       }
       // const prec = this.layout.prec
@@ -12582,9 +12565,9 @@ function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t =
         });
       }
       if (this.$props.legendDecimal) {
-        return [this.localValues.ohlcv[1].toFixed(this.localValues.ohlcv[1] < 1 ? 3 : 2), this.localValues.ohlcv[2].toFixed(this.localValues.ohlcv[2] < 1 ? 3 : 2), this.localValues.ohlcv[3].toFixed(this.localValues.ohlcv[3] < 1 ? 3 : 2), this.localValues.ohlcv[4].toFixed(this.localValues.ohlcv[4] < 1 ? 3 : 2), this.localValues.ohlcv[5] ? Number(this.localValues.ohlcv[5].toFixed(0)).toLocaleString('en-AU') : 'n/a'];
+        return [this.$props.values.ohlcv[1].toFixed(this.$props.values.ohlcv[1] < 1 ? 3 : 2), this.$props.values.ohlcv[2].toFixed(this.$props.values.ohlcv[2] < 1 ? 3 : 2), this.$props.values.ohlcv[3].toFixed(this.$props.values.ohlcv[3] < 1 ? 3 : 2), this.$props.values.ohlcv[4].toFixed(this.$props.values.ohlcv[4] < 1 ? 3 : 2), this.$props.values.ohlcv[5] ? Number(this.$props.values.ohlcv[5].toFixed(0)).toLocaleString('en-AU') : 'n/a'];
       } else {
-        return [this.localValues.ohlcv[1].toFixed(prec), this.localValues.ohlcv[2].toFixed(prec), this.localValues.ohlcv[3].toFixed(prec), this.localValues.ohlcv[4].toFixed(prec), this.localValues.ohlcv[5] ? Number(this.localValues.ohlcv[5].toFixed(0)).toLocaleString('en-AU') : 'n/a'];
+        return [this.$props.values.ohlcv[1].toFixed(prec), this.$props.values.ohlcv[2].toFixed(prec), this.$props.values.ohlcv[3].toFixed(prec), this.$props.values.ohlcv[4].toFixed(prec), this.$props.values.ohlcv[5] ? Number(this.$props.values.ohlcv[5].toFixed(0)).toLocaleString('en-AU') : 'n/a'];
       }
     },
     calc_style: function calc_style() {
@@ -12614,9 +12597,9 @@ function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t =
 });
 ;// ./src/components/TitleLegend.vue?vue&type=script&lang=js
  /* harmony default export */ const components_TitleLegendvue_type_script_lang_js = (TitleLegendvue_type_script_lang_js); 
-// EXTERNAL MODULE: ./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/TitleLegend.vue?vue&type=style&index=0&id=65e3b5dc&prod&lang=css
-var TitleLegendvue_type_style_index_0_id_65e3b5dc_prod_lang_css = __webpack_require__(755);
-;// ./src/components/TitleLegend.vue?vue&type=style&index=0&id=65e3b5dc&prod&lang=css
+// EXTERNAL MODULE: ./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/TitleLegend.vue?vue&type=style&index=0&id=37c0ed93&prod&lang=css
+var TitleLegendvue_type_style_index_0_id_37c0ed93_prod_lang_css = __webpack_require__(872);
+;// ./src/components/TitleLegend.vue?vue&type=style&index=0&id=37c0ed93&prod&lang=css
 
 ;// ./src/components/TitleLegend.vue
 
@@ -12629,8 +12612,8 @@ var TitleLegendvue_type_style_index_0_id_65e3b5dc_prod_lang_css = __webpack_requ
 
 var TitleLegend_component = normalizeComponent(
   components_TitleLegendvue_type_script_lang_js,
-  TitleLegendvue_type_template_id_65e3b5dc_render,
-  TitleLegendvue_type_template_id_65e3b5dc_staticRenderFns,
+  TitleLegendvue_type_template_id_37c0ed93_render,
+  TitleLegendvue_type_template_id_37c0ed93_staticRenderFns,
   false,
   null,
   null,
