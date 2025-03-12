@@ -5369,8 +5369,8 @@ var MAP_UNIT = {
   map_unit: MAP_UNIT,
   IB_TF_WARN: IB_TF_WARN
 });
-;// ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/Chart.vue?vue&type=template&id=33cedb5c
-var Chartvue_type_template_id_33cedb5c_render = function render() {
+;// ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/Chart.vue?vue&type=template&id=efb23b46
+var Chartvue_type_template_id_efb23b46_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', {
@@ -5432,10 +5432,10 @@ var Chartvue_type_template_id_33cedb5c_render = function render() {
     }
   }, 'botbar', _vm.botbar_props, false))], 2);
 };
-var Chartvue_type_template_id_33cedb5c_staticRenderFns = [];
-Chartvue_type_template_id_33cedb5c_render._withStripped = true;
+var Chartvue_type_template_id_efb23b46_staticRenderFns = [];
+Chartvue_type_template_id_efb23b46_render._withStripped = true;
 
-;// ./src/components/Chart.vue?vue&type=template&id=33cedb5c
+;// ./src/components/Chart.vue?vue&type=template&id=efb23b46
 
 ;// ./node_modules/@babel/runtime/helpers/esm/arrayWithHoles.js
 function _arrayWithHoles(r) {
@@ -13844,18 +13844,12 @@ var TI = /*#__PURE__*/function () {
       },
       deep: true
     },
-    _layout: {
+    cursor: {
       handler: function handler(n, p) {
         this.$emit("updateSection", n);
       },
       deep: true
     }
-    // cursor: {
-    //   handler: function (n, p) {
-    //     this.$emit("updateSection", n);
-    //   },
-    //   deep: true
-    // },
   },
   created: function created() {
     // Context for text measurements
@@ -13865,8 +13859,8 @@ var TI = /*#__PURE__*/function () {
     this.init_range();
     this.sub = this.subset(this.range, 'subset created');
     utils.overwrite(this.range, this.range); // Fix for IB mode
-    // this._layout = new Layout(this)
-    this.$set(this, "_layout", new layout(this));
+    this._layout = new layout(this);
+
     // Updates current cursor values
     this.updater = new updater(this);
     this.update_last_values();
@@ -14196,8 +14190,8 @@ var TI = /*#__PURE__*/function () {
 ;
 var Chart_component = normalizeComponent(
   components_Chartvue_type_script_lang_js,
-  Chartvue_type_template_id_33cedb5c_render,
-  Chartvue_type_template_id_33cedb5c_staticRenderFns,
+  Chartvue_type_template_id_efb23b46_render,
+  Chartvue_type_template_id_efb23b46_staticRenderFns,
   false,
   null,
   null,

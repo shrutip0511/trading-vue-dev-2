@@ -269,18 +269,12 @@ export default {
       },
       deep: true
     },
-    _layout: {
+    cursor: {
       handler: function (n, p) {
         this.$emit("updateSection", n);
       },
       deep: true
     },
-    // cursor: {
-    //   handler: function (n, p) {
-    //     this.$emit("updateSection", n);
-    //   },
-    //   deep: true
-    // },
   },
   created() {
 
@@ -291,8 +285,8 @@ export default {
     this.init_range()
     this.sub = this.subset(this.range, 'subset created')
     Utils.overwrite(this.range, this.range) // Fix for IB mode
-    // this._layout = new Layout(this)
-    this.$set(this, "_layout", new Layout(this));
+    this._layout = new Layout(this)
+
     // Updates current cursor values
     this.updater = new CursorUpdater(this)
 
