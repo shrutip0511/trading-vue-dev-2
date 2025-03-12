@@ -3,7 +3,7 @@
   <div class="trading-vue-chart" :style="styles">
     <keyboard ref="keyboard"></keyboard>
     <div class="legend-here">
-      <title-chart-legend 
+      <!-- <title-chart-legend 
         ref="legend" 
         :values="main_section_values" 
         :decimalPlace="decimalPlace"        
@@ -11,7 +11,7 @@
         :common="main_section_legend_props" 
         :grid_id="0"
         :meta_props="get_meta_props"
-        :showTitleChartLegend="showTitleChartLegend"></title-chart-legend>
+        :showTitleChartLegend="showTitleChartLegend"></title-chart-legend> -->
     </div>
     <grid-section v-for="(grid, i) in this._layout.grids" :key="grid.id" ref="sec" :common="section_props(i)"
       :grid_id="i" @register-kb-listener="register_kb" @remove-kb-listener="remove_kb" @range-changed="range_changed"

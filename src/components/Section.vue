@@ -1,7 +1,7 @@
 <template>
   <!-- Horizontal section: (grid + sidebar) -->
    <div>
-  <!-- <title-chart-legend
+  <title-chart-legend
       ref="legend"
       :values="section_values"
       :decimalPlace="decimalPlace"
@@ -11,7 +11,7 @@
       :meta_props="get_meta_props"
       :showTitleChartLegend="showTitleChartLegend"
     >
-    </title-chart-legend> -->
+    </title-chart-legend>
    
   <div class="trading-vue-section">
     <chart-legend
