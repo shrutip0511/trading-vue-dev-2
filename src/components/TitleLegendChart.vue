@@ -2,7 +2,7 @@
     <div class="trading-vue-legend title-legend" >
         <div v-if="(grid_id === 0 && showTitleChartLegend)" class="trading-vue-ohlcv"
             >
-            <!-- <template v-if="common?.showLegendPropsData && common.showLegendPropsData.length">
+            <template v-if="common?.showLegendPropsData && common.showLegendPropsData.length">
                 <b v-for="(n, i) in common.showLegendPropsData" :key="i">{{ n.k }} : {{ n.v }}&nbsp;</b><br />
             </template>
             <template v-if="show_CustomProps"><span v-for="(n, i) in legendTxtConfig" :key="i"
@@ -22,9 +22,7 @@
             </span>
             <span v-if="!show_values" class="t-vue-lspan" :style="{ color: common.colors.text }">
                 {{ (common.meta.last || [])[4] }}
-            </span>-->
-            {{ `common cursor - ${JSON.stringify(common.cursor_mode)}` }} <br/><br/>
-            {{ `common meta - ${JSON.stringify(common.meta)}` }} <br/><br/>
+            </span>
         </div> 
 
     </div>
@@ -87,7 +85,7 @@ export default {
             return f ? f.type : undefined
         },
         show_values() {
-            return this.common.cursor.mode !== 'explore'
+            return this.common.cursor_mode !== 'explore'
         }
     },
     methods: {
