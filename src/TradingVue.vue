@@ -21,7 +21,7 @@
         :legendDecimal="legendDecimal"
         :grid_id="0"
         :common="main_section_legend_props"
-        :meta_props="meta_values"
+        :meta_props="layer_meta_values"
         :showTitleChartLegend="showTitleChartLegend"
       >
 
@@ -36,8 +36,8 @@
       :ignoreNegativeIndex="ignoreNegativeIndex" :ignore_OHLC="ignore_OHLC" :key="reset" ref="chart"
       v-bind="chart_props" :tv_id="id" :config="chart_config" @custom-event="custom_event"
       @range-changed="range_changed" @chart_data_changed="chart_data_changed" @sidebar-transform="sidebar_transform"
-      @legend-button-click="legend_button" @on-collapse-change="collapse_button" @updateSection="updateSection"
-      @updateMeta="updateMeta">
+      @legend-button-click="legend_button" @on-collapse-change="collapse_button" 
+      @updateSection="updateSection" @updateMeta="updateMeta" @updateLayerMeta="updateLayerMeta" @updateCursorMode="updateCursorMode" >
     </chart>
     <transition name="tvjs-drift">
       <the-tip v-if="tip" :data="tip" @remove-me="tip = null" />
@@ -274,7 +274,7 @@ export default {
     },
   },
   data() {
-    return { reset: 0, tip: null, section_values: null, meta_values: null };
+    return { reset: 0, tip: null, section_values: null, meta_values: null, layer_meta_values: null, cursor_mode:null };
   },
   computed: {
     // Copy a subset of TradingVue props
@@ -368,6 +368,8 @@ export default {
       p.legendTxtConfig = res
       p.show_CustomProps = show_CustomProps
       p.chartType = chartType
+      p.meta = this.meta_values
+      p.cursor_mode = this.cursor_mode
       return p;
     },
   },
@@ -381,6 +383,12 @@ export default {
     },
     updateMeta(value) {
       this.meta_values = value;
+    },
+    updateLayerMeta(value) {
+      this.layer_meta_values = value;
+    },
+    updateCursorMode(value) {
+      this.cursor_mode = value;
     },
     chart_data_changed(flag) {
       this.$emit("chart_data_changed", flag);

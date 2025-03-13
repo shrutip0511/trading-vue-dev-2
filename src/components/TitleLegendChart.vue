@@ -23,6 +23,8 @@
             <span v-if="!show_values" class="t-vue-lspan" :style="{ color: common.colors.text }">
                 {{ (common.meta.last || [])[4] }}
             </span>-->
+            {{ `common cursor - ${JSON.stringify(common.cursor_mode)}` }} <br/><br/>
+            {{ `common meta - ${JSON.stringify(common.meta)}` }} <br/><br/>
         </div> 
 
     </div>

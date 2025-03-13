@@ -280,13 +280,16 @@ export default {
     },
     layers_meta: {
       handler: function (newVal, p) {
-
         if (newVal[0]) {
-          
-          this.$emit("updateMeta", newVal[0]);
-        } 
+          this.$emit("updateLayerMeta", newVal[0]);
+        }
       },
-
+      deep: true
+    },
+    meta: {
+      handler: function (newVal, p) {
+        this.$emit("updateMeta", newVal);
+      },
       deep: true
     },
   },
