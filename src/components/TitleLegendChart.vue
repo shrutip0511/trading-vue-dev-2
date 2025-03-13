@@ -80,7 +80,7 @@ export default {
         },
         main_type() {
             
-            let f = this.common.data.find(x => x.main)
+            let f = this.common.chartType
             console.log("main_type", f);
             return f ? f.type : undefined
         },

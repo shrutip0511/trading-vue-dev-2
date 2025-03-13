@@ -367,7 +367,7 @@ export default {
       let show_CustomProps = this.ignore_OHLC.includes(chartType)
       p.legendTxtConfig = res
       p.show_CustomProps = show_CustomProps
-      // p.meta = meta_values
+      p.chartType = chartType
       return p;
     },
   },
