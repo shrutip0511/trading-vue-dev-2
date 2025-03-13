@@ -8,12 +8,25 @@
   }" @mousedown="mousedown" @mouseleave="mouseleave">
     <toolbar v-if="toolbar" ref="toolbar" v-bind="chart_props" :config="chart_config" @custom-event="custom_event">
     </toolbar>
-    {{ section_values }}
-    {{ meta_values }}
+    <!-- {{ section_values }}
+    {{ meta_values }} -->
     <!-- {{ decimalPlace }}
     {{ legendDecimal }}
     {{ showTitleChartLegend }} -->
-     {{ main_section_legend_props }}
+    <!-- {{ main_section_legend_props }} -->
+      <title-legend-chart
+        ref="legend"
+        :values="section_values"
+        :decimalPlace="decimalPlace"
+        :legendDecimal="legendDecimal"
+        :grid_id="grid_id"
+        :common="main_section_legend_props"
+        :meta_props="meta_values"
+        :showTitleChartLegend="showTitleChartLegend"
+      >
+
+      </title-legend-chart>
+
     <widgets v-if="controllers.length" ref="widgets" :map="ws" :width="width" :height="height" :tv="this" :dc="data">
     </widgets>
     <chart :enableZoom="enableZoom" :showTitleChartLegend="showTitleChartLegend"
@@ -23,7 +36,8 @@
       :ignoreNegativeIndex="ignoreNegativeIndex" :ignore_OHLC="ignore_OHLC" :key="reset" ref="chart"
       v-bind="chart_props" :tv_id="id" :config="chart_config" @custom-event="custom_event"
       @range-changed="range_changed" @chart_data_changed="chart_data_changed" @sidebar-transform="sidebar_transform"
-      @legend-button-click="legend_button" @on-collapse-change="collapse_button" @updateSection="updateSection" @updateMeta="updateMeta">
+      @legend-button-click="legend_button" @on-collapse-change="collapse_button" @updateSection="updateSection"
+      @updateMeta="updateMeta">
     </chart>
     <transition name="tvjs-drift">
       <the-tip v-if="tip" :data="tip" @remove-me="tip = null" />
@@ -39,6 +53,8 @@ import Widgets from "./components/Widgets.vue";
 import TheTip from "./components/TheTip.vue";
 import XControl from "./mixins/xcontrol.js";
 import IndexedArray from 'arrayslicer'
+import TitleLegendChart from './components/TitleLegendChart.vue'
+
 export default {
   name: "TradingVue",
   components: {
@@ -46,6 +62,7 @@ export default {
     Toolbar,
     Widgets,
     TheTip,
+    TitleLegendChart
   },
   mixins: [XControl],
   props: {
