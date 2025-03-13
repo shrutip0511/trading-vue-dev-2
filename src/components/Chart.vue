@@ -12,7 +12,7 @@
         :grid_id="0"
         :meta_props="get_meta_props"
         :showTitleChartLegend="showTitleChartLegend"></title-chart-legend> -->
-      {{ layers_meta[0] && layers_meta[0] }}
+      <!-- {{ layers_meta[0] && layers_meta[0] }} -->
     </div>
     <grid-section v-for="(grid, i) in this._layout.grids" :key="grid.id" ref="sec" :common="section_props(i)"
       :grid_id="i" @register-kb-listener="register_kb" @remove-kb-listener="remove_kb" @range-changed="range_changed"
