@@ -345,7 +345,7 @@ export default {
     main_section_legend_props() {
       const id = 0;
       let p = Object.assign({});
-      p.colors = Object.assign({}, this.$props.colors || this.colorpack);
+      p.colors = this.chart_props.colors
       p.title_txt = this.decubed.chart.name || this.$props.titleTxt
       p.exchange_txt = this.$props.exchangeTxt
 
