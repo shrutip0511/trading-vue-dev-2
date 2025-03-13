@@ -24,10 +24,6 @@
                 {{ (common.meta.last || [])[4] }}
             </span>
             {{ `common - ${JSON.stringify(common?.colors)}` }} <br/><br/>
-            {{ `common - ${JSON.stringify(common?.title_txt)}` }} <br/><br/>
-            {{ `common - ${JSON.stringify(common?.exchange_txt)}` }} <br/><br/>
-            {{ `common - ${JSON.stringify(common?.legendTxtConfig)}` }} <br/><br/>
-            {{ `common - ${JSON.stringify(common?.show_CustomProps)}` }} <br/><br/>
             {{ `common - ${JSON.stringify(meta_props)}` }} <br/><br/>
         </div>
 

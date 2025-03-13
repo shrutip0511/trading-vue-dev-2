@@ -297,7 +297,10 @@ export default {
         showSettingsButton: this.$props.showSettingsButton,
       };
 
+      console.log("chart_props before", chart_props);
       this.parse_colors(chart_props.colors);
+      console.log("chart_props", chart_props);
+      
       return chart_props;
     },
     chart_config() {
