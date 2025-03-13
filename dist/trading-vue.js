@@ -5415,8 +5415,8 @@ var MAP_UNIT = {
   map_unit: MAP_UNIT,
   IB_TF_WARN: IB_TF_WARN
 });
-;// ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/Chart.vue?vue&type=template&id=827822a4
-var Chartvue_type_template_id_827822a4_render = function render() {
+;// ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/Chart.vue?vue&type=template&id=1fdb2c92
+var Chartvue_type_template_id_1fdb2c92_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', {
@@ -5467,10 +5467,10 @@ var Chartvue_type_template_id_827822a4_render = function render() {
     }
   }, 'botbar', _vm.botbar_props, false))], 2);
 };
-var Chartvue_type_template_id_827822a4_staticRenderFns = [];
-Chartvue_type_template_id_827822a4_render._withStripped = true;
+var Chartvue_type_template_id_1fdb2c92_staticRenderFns = [];
+Chartvue_type_template_id_1fdb2c92_render._withStripped = true;
 
-;// ./src/components/Chart.vue?vue&type=template&id=827822a4
+;// ./src/components/Chart.vue?vue&type=template&id=1fdb2c92
 
 ;// ./node_modules/@babel/runtime/helpers/esm/arrayWithHoles.js
 function _arrayWithHoles(r) {
@@ -13887,6 +13887,9 @@ var TI = /*#__PURE__*/function () {
         if (newVal[0]) {
           this.$emit("updateLayerMeta", newVal[0]);
         }
+        if (newVal.mode) {
+          this.$emit("updateCursorMode", newVal.mode);
+        }
       },
       deep: true
     },
@@ -14236,8 +14239,8 @@ var TI = /*#__PURE__*/function () {
 ;
 var Chart_component = normalizeComponent(
   components_Chartvue_type_script_lang_js,
-  Chartvue_type_template_id_827822a4_render,
-  Chartvue_type_template_id_827822a4_staticRenderFns,
+  Chartvue_type_template_id_1fdb2c92_render,
+  Chartvue_type_template_id_1fdb2c92_staticRenderFns,
   false,
   null,
   null,

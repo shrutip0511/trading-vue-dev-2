@@ -283,6 +283,9 @@ export default {
         if (newVal[0]) {
           this.$emit("updateLayerMeta", newVal[0]);
         }
+        if (newVal.mode) {
+          this.$emit("updateCursorMode", newVal.mode);
+        }
       },
       deep: true
     },
