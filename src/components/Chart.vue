@@ -271,8 +271,8 @@ export default {
     },
     cursor: {
       handler: function (newVal, p) {
-        if (newVal.values) {
-          this.$emit("updateSection", newVal.values);
+        if (newVal.values[0]) {
+          this.$emit("updateSection", newVal.values[0]);
         }
       },
       deep: true
