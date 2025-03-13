@@ -24,13 +24,7 @@
                 {{ (common.meta.last || [])[4] }}
             </span>-->
             {{ `common - ${JSON.stringify(common)}` }} <br/><br/>
-            {{ `values - ${JSON.stringify(values)}` }} <br/><br/>
-            {{ `decimalPlace - ${JSON.stringify(decimalPlace)}` }} <br/><br/>
-            {{ `grid_id - ${JSON.stringify(grid_id)}` }} <br/><br/>
             {{ `meta_props - ${JSON.stringify(meta_props)}` }} <br/><br/>
-            {{ `legendDecimal - ${JSON.stringify(legendDecimal)}` }} <br/><br/>
-            {{ `showTitleChartLegend - ${JSON.stringify(showTitleChartLegend)}` }} <br/><br/>
-            {{ values?.ohlcv }}
             <b>------------------------------------</b>
         </div> 
 

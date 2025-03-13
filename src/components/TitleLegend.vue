@@ -23,12 +23,12 @@
             <span v-if="!show_values" class="t-vue-lspan" :style="{ color: common.colors.text }">
                 {{ (common.meta.last || [])[4] }}
             </span>
-            {{ `decimalPlace - ${JSON.stringify(decimalPlace)}` }} <br/>
-            {{ `grid_id - ${JSON.stringify(grid_id)}` }} <br/><br/>
-            {{ `legendDecimal - ${JSON.stringify(legendDecimal)}` }} <br/><br/>
-            {{ `showTitleChartLegend - ${JSON.stringify(showTitleChartLegend)}` }} <br/><br/>
-            {{ `meta_props - ${JSON.stringify(meta_props)}` }} <br/><br/>
-            {{ values?.ohlcv }}
+            {{ `common - ${JSON.stringify(common?.colors)}` }} <br/><br/>
+            {{ `common - ${JSON.stringify(common?.title_txt)}` }} <br/><br/>
+            {{ `common - ${JSON.stringify(common?.exchange_txt)}` }} <br/><br/>
+            {{ `common - ${JSON.stringify(common?.legendTxtConfig)}` }} <br/><br/>
+            {{ `common - ${JSON.stringify(common?.show_CustomProps)}` }} <br/><br/>
+            {{ `common - ${JSON.stringify(meta_props)}` }} <br/><br/>
         </div>
 
     </div>
