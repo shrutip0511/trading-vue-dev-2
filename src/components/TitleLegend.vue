@@ -23,6 +23,11 @@
             <span v-if="!show_values" class="t-vue-lspan" :style="{ color: common.colors.text }">
                 {{ (common.meta.last || [])[4] }}
             </span>
+            {{ `decimalPlace - ${JSON.stringify(decimalPlace)}` }} <br/>
+            {{ `grid_id - ${JSON.stringify(grid_id)}` }} <br/><br/>
+            {{ `legendDecimal - ${JSON.stringify(legendDecimal)}` }} <br/><br/>
+            {{ `showTitleChartLegend - ${JSON.stringify(showTitleChartLegend)}` }} <br/><br/>
+            {{ `meta_props - ${JSON.stringify(meta_props)}` }} <br/><br/>
             {{ values?.ohlcv }}
         </div>
 

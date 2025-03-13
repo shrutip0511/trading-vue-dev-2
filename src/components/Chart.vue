@@ -270,8 +270,10 @@ export default {
       deep: true
     },
     cursor: {
-      handler: function (n, p) {
-        this.$emit("updateSection", n);
+      handler: function (newVal, p) {
+        if (newVal.values) {
+          this.$emit("updateSection", n);
+        }
       },
       deep: true
     },
