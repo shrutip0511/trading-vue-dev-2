@@ -12,7 +12,7 @@
         :grid_id="0"
         :meta_props="get_meta_props"
         :showTitleChartLegend="showTitleChartLegend"></title-chart-legend> -->
-        {{ layers_meta }}
+      {{ layers_meta[0] && layers_meta[0] }}
     </div>
     <grid-section v-for="(grid, i) in this._layout.grids" :key="grid.id" ref="sec" :common="section_props(i)"
       :grid_id="i" @register-kb-listener="register_kb" @remove-kb-listener="remove_kb" @range-changed="range_changed"
@@ -108,7 +108,7 @@ export default {
     main_section() {
       let p = Object.assign({}, this.common_props())
       console.log("main_section 1", p);
-      
+
       p.data = this.overlay_subset(this.onchart, 'onchart')
       p.data.push({
         type: this.chart.type || 'Candles',
@@ -278,10 +278,15 @@ export default {
       },
       deep: true
     },
-    meta: {
-      handler: function (n, p) {
-        this.$emit("updateMeta", n);
+    layers_meta: {
+      handler: function (newVal, p) {
+
+        if (newVal[0]) {
+          
+          this.$emit("updateMeta", newVal[0]);
+        } 
       },
+
       deep: true
     },
   },
