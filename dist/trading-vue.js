@@ -5413,8 +5413,8 @@ var MAP_UNIT = {
   map_unit: MAP_UNIT,
   IB_TF_WARN: IB_TF_WARN
 });
-;// ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/Chart.vue?vue&type=template&id=850c890e
-var Chartvue_type_template_id_850c890e_render = function render() {
+;// ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/Chart.vue?vue&type=template&id=3f6a381a
+var Chartvue_type_template_id_3f6a381a_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', {
@@ -5465,10 +5465,10 @@ var Chartvue_type_template_id_850c890e_render = function render() {
     }
   }, 'botbar', _vm.botbar_props, false))], 2);
 };
-var Chartvue_type_template_id_850c890e_staticRenderFns = [];
-Chartvue_type_template_id_850c890e_render._withStripped = true;
+var Chartvue_type_template_id_3f6a381a_staticRenderFns = [];
+Chartvue_type_template_id_3f6a381a_render._withStripped = true;
 
-;// ./src/components/Chart.vue?vue&type=template&id=850c890e
+;// ./src/components/Chart.vue?vue&type=template&id=3f6a381a
 
 ;// ./node_modules/@babel/runtime/helpers/esm/arrayWithHoles.js
 function _arrayWithHoles(r) {
@@ -13875,7 +13875,7 @@ var TI = /*#__PURE__*/function () {
     cursor: {
       handler: function handler(newVal, p) {
         if (newVal.values) {
-          this.$emit("updateSection", n);
+          this.$emit("updateSection", newVal.values);
         }
       },
       deep: true
@@ -14226,8 +14226,8 @@ var TI = /*#__PURE__*/function () {
 ;
 var Chart_component = normalizeComponent(
   components_Chartvue_type_script_lang_js,
-  Chartvue_type_template_id_850c890e_render,
-  Chartvue_type_template_id_850c890e_staticRenderFns,
+  Chartvue_type_template_id_3f6a381a_render,
+  Chartvue_type_template_id_3f6a381a_staticRenderFns,
   false,
   null,
   null,
