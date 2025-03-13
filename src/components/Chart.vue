@@ -275,6 +275,9 @@ export default {
         if (newVal.values[0]) {
           this.$emit("updateSection", newVal.values[0]);
         }
+        if (newVal.mode) {
+          this.$emit("updateCursorMode", newVal.mode);
+        }
       },
       deep: true
     },
@@ -282,9 +285,6 @@ export default {
       handler: function (newVal, p) {
         if (newVal[0]) {
           this.$emit("updateLayerMeta", newVal[0]);
-        }
-        if (newVal.mode) {
-          this.$emit("updateCursorMode", newVal.mode);
         }
       },
       deep: true
