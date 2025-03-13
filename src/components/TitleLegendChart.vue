@@ -23,9 +23,6 @@
             <span v-if="!show_values" class="t-vue-lspan" :style="{ color: common.colors.text }">
                 {{ (common.meta.last || [])[4] }}
             </span>-->
-            {{ `common - ${JSON.stringify(common)}` }} <br/><br/>
-            {{ `meta_props - ${JSON.stringify(meta_props)}` }} <br/><br/>
-            <b>------------------------------------</b>
         </div> 
 
     </div>
