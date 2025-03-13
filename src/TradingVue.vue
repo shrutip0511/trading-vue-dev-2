@@ -19,7 +19,7 @@
         :values="section_values"
         :decimalPlace="decimalPlace"
         :legendDecimal="legendDecimal"
-        :grid_id="grid_id"
+        :grid_id="0"
         :common="main_section_legend_props"
         :meta_props="meta_values"
         :showTitleChartLegend="showTitleChartLegend"

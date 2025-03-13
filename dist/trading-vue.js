@@ -278,20 +278,6 @@ IndexedArray.prototype.getRange = function (begin, end) {
 
 /***/ }),
 
-/***/ 99:
-/***/ ((module, exports, __webpack_require__) => {
-
-// Imports
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(314);
-exports = ___CSS_LOADER_API_IMPORT___(false);
-// Module
-exports.push([module.id, "\n.trading-vue-legend {\r\n    position: relative;\r\n    z-index: 1;\r\n    font-size: 1.25em;\r\n    margin-left: 10px;\r\n    pointer-events: none;\r\n    text-align: left;\r\n    user-select: none;\r\n    font-weight: 300;\n}\n@media (min-resolution: 2x) {\n.trading-vue-legend {\r\n        font-weight: 400;\n}\n}\n.trading-vue-ohlcv {\r\n    pointer-events: none;\r\n    margin-bottom: 0.5em;\n}\n.t-vue-lspan {\r\n    font-variant-numeric: tabular-nums;\r\n    font-size: 0.95em;\r\n    color: #999999;\r\n    /* TODO: move => params */\r\n    margin-left: 0.1em;\r\n    margin-right: 0.2em;\n}\n.t-vue-title {\r\n    font-size: 1.45em;\n}\n.t-vue-exchange{\r\n    font-size: 0.9em;\r\n    font-weight: 600;\r\n    margin-right: 0.25em;\n}\n.t-vue-ind {\r\n    display: flex;\r\n    margin-left: 0.2em;\r\n    margin-bottom: 0.5em;\r\n    font-size: 1.0em;\r\n    margin-top: 0.3em;\n}\n.t-vue-ivalue {\r\n    margin-left: 0.5em;\n}\n.t-vue-unknown {\r\n    color: #999999;\r\n    /* TODO: move => params */\n}\n.tvjs-appear-enter-active,\r\n.tvjs-appear-leave-active {\r\n    transition: all .25s ease;\n}\n.tvjs-appear-enter,\r\n.tvjs-appear-leave-to {\r\n    opacity: 0;\n}\r\n", ""]);
-// Exports
-module.exports = exports;
-
-
-/***/ }),
-
 /***/ 168:
 /***/ ((module, exports, __webpack_require__) => {
 
@@ -3417,38 +3403,6 @@ function toComment(sourceMap) {
 
 /***/ }),
 
-/***/ 349:
-/***/ ((module, exports, __webpack_require__) => {
-
-// Imports
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(314);
-exports = ___CSS_LOADER_API_IMPORT___(false);
-// Module
-exports.push([module.id, "\r\n/* Anit-boostrap tactix */\n.trading-vue *,\r\n::after,\r\n::before {\r\n  box-sizing: content-box;\n}\n.trading-vue img {\r\n  vertical-align: initial;\n}\r\n", ""]);
-// Exports
-module.exports = exports;
-
-
-/***/ }),
-
-/***/ 378:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(99);
-if(content.__esModule) content = content.default;
-if(typeof content === 'string') content = [[module.id, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var add = (__webpack_require__(534)/* ["default"] */ .A)
-var update = add("1eddf81c", content, false, {});
-// Hot Module Replacement
-if(false) {}
-
-/***/ }),
-
 /***/ 392:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -3531,24 +3485,6 @@ module.exports.isSortableArrayLike = function (o) {
 
 /***/ }),
 
-/***/ 402:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(349);
-if(content.__esModule) content = content.default;
-if(typeof content === 'string') content = [[module.id, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var add = (__webpack_require__(534)/* ["default"] */ .A)
-var update = add("72062a02", content, false, {});
-// Hot Module Replacement
-if(false) {}
-
-/***/ }),
-
 /***/ 407:
 /***/ ((module, exports, __webpack_require__) => {
 
@@ -3581,14 +3517,32 @@ if(false) {}
 
 /***/ }),
 
-/***/ 463:
+/***/ 477:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(814);
+if(content.__esModule) content = content.default;
+if(typeof content === 'string') content = [[module.id, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = (__webpack_require__(534)/* ["default"] */ .A)
+var update = add("275ec15d", content, false, {});
+// Hot Module Replacement
+if(false) {}
+
+/***/ }),
+
+/***/ 520:
 /***/ ((module, exports, __webpack_require__) => {
 
 // Imports
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(314);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.id, "\n.trading-vue-section {\r\n  height: 0;\r\n  position: absolute;\n}\r\n", ""]);
+exports.push([module.id, "\r\n/* Anit-boostrap tactix */\n.trading-vue *,\r\n::after,\r\n::before {\r\n  box-sizing: content-box;\n}\n.trading-vue img {\r\n  vertical-align: initial;\n}\r\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -3922,6 +3876,24 @@ exports.push([module.id, "\n.trading-vue-ux-wrapper {\n    position: absolute;\n
 // Exports
 module.exports = exports;
 
+
+/***/ }),
+
+/***/ 558:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(863);
+if(content.__esModule) content = content.default;
+if(typeof content === 'string') content = [[module.id, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = (__webpack_require__(534)/* ["default"] */ .A)
+var update = add("158058d0", content, false, {});
+// Hot Module Replacement
+if(false) {}
 
 /***/ }),
 
@@ -4299,6 +4271,24 @@ if(false) {}
 
 /***/ }),
 
+/***/ 711:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(520);
+if(content.__esModule) content = content.default;
+if(typeof content === 'string') content = [[module.id, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = (__webpack_require__(534)/* ["default"] */ .A)
+var update = add("0d467bbc", content, false, {});
+// Hot Module Replacement
+if(false) {}
+
+/***/ }),
+
 /***/ 731:
 /***/ ((module, exports, __webpack_require__) => {
 
@@ -4383,6 +4373,20 @@ if(false) {}
 
 /***/ }),
 
+/***/ 814:
+/***/ ((module, exports, __webpack_require__) => {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(314);
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.id, "\n.trading-vue-section {\r\n  height: 0;\r\n  position: absolute;\n}\r\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
 /***/ 834:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -4398,6 +4402,20 @@ var add = (__webpack_require__(534)/* ["default"] */ .A)
 var update = add("0fc51e60", content, false, {});
 // Hot Module Replacement
 if(false) {}
+
+/***/ }),
+
+/***/ 863:
+/***/ ((module, exports, __webpack_require__) => {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(314);
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.id, "\n.trading-vue-legend {\r\n    position: relative;\r\n    z-index: 1;\r\n    font-size: 1.25em;\r\n    margin-left: 10px;\r\n    pointer-events: none;\r\n    text-align: left;\r\n    user-select: none;\r\n    font-weight: 300;\n}\n@media (min-resolution: 2x) {\n.trading-vue-legend {\r\n        font-weight: 400;\n}\n}\n.trading-vue-ohlcv {\r\n    pointer-events: none;\r\n    margin-bottom: 0.5em;\n}\n.t-vue-lspan {\r\n    font-variant-numeric: tabular-nums;\r\n    font-size: 0.95em;\r\n    color: #999999;\r\n    /* TODO: move => params */\r\n    margin-left: 0.1em;\r\n    margin-right: 0.2em;\n}\n.t-vue-title {\r\n    font-size: 1.45em;\n}\n.t-vue-exchange{\r\n    font-size: 0.9em;\r\n    font-weight: 600;\r\n    margin-right: 0.25em;\n}\n.t-vue-ind {\r\n    display: flex;\r\n    margin-left: 0.2em;\r\n    margin-bottom: 0.5em;\r\n    font-size: 1.0em;\r\n    margin-top: 0.3em;\n}\n.t-vue-ivalue {\r\n    margin-left: 0.5em;\n}\n.t-vue-unknown {\r\n    color: #999999;\r\n    /* TODO: move => params */\n}\n.tvjs-appear-enter-active,\r\n.tvjs-appear-leave-active {\r\n    transition: all .25s ease;\n}\n.tvjs-appear-enter,\r\n.tvjs-appear-leave-to {\r\n    opacity: 0;\n}\r\n", ""]);
+// Exports
+module.exports = exports;
+
 
 /***/ }),
 
@@ -4525,24 +4543,6 @@ exports.push([module.id, "\n.tvjs-item-list {\r\n    position: absolute;\r\n    
 // Exports
 module.exports = exports;
 
-
-/***/ }),
-
-/***/ 944:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(463);
-if(content.__esModule) content = content.default;
-if(typeof content === 'string') content = [[module.id, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var add = (__webpack_require__(534)/* ["default"] */ .A)
-var update = add("bbd1cdc8", content, false, {});
-// Hot Module Replacement
-if(false) {}
 
 /***/ }),
 
@@ -5159,7 +5159,7 @@ __webpack_require__.d(__webpack_exports__, {
   primitives: () => (/* binding */ primitives)
 });
 
-;// ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/TradingVue.vue?vue&type=template&id=393e957b
+;// ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/TradingVue.vue?vue&type=template&id=126a633f
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
@@ -5192,7 +5192,7 @@ var render = function render() {
       "values": _vm.section_values,
       "decimalPlace": _vm.decimalPlace,
       "legendDecimal": _vm.legendDecimal,
-      "grid_id": _vm.grid_id,
+      "grid_id": 0,
       "common": _vm.main_section_legend_props,
       "meta_props": _vm.meta_values,
       "showTitleChartLegend": _vm.showTitleChartLegend
@@ -5253,7 +5253,7 @@ var render = function render() {
 var staticRenderFns = [];
 render._withStripped = true;
 
-;// ./src/TradingVue.vue?vue&type=template&id=393e957b
+;// ./src/TradingVue.vue?vue&type=template&id=126a633f
 
 ;// ./node_modules/@babel/runtime/helpers/esm/arrayLikeToArray.js
 function _arrayLikeToArray(r, a) {
@@ -7013,11 +7013,22 @@ var CursorUpdater = /*#__PURE__*/function () {
   }]);
 }();
 /* harmony default export */ const updater = (CursorUpdater);
-;// ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/Section.vue?vue&type=template&id=e5a74d64
-var Sectionvue_type_template_id_e5a74d64_render = function render() {
+;// ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/Section.vue?vue&type=template&id=0a4b297d
+var Sectionvue_type_template_id_0a4b297d_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
-  return _c('div', [_c('div', {
+  return _c('div', [_c('title-chart-legend', {
+    ref: "legend",
+    attrs: {
+      "values": _vm.section_values,
+      "decimalPlace": _vm.decimalPlace,
+      "legendDecimal": _vm.legendDecimal,
+      "grid_id": _vm.grid_id,
+      "common": _vm.legend_props,
+      "meta_props": _vm.get_meta_props,
+      "showTitleChartLegend": _vm.showTitleChartLegend
+    }
+  }), _vm._v(" "), _c('div', {
     staticClass: "trading-vue-section"
   }, [_c('chart-legend', {
     ref: "legend",
@@ -7069,12 +7080,12 @@ var Sectionvue_type_template_id_e5a74d64_render = function render() {
     on: {
       "sidebar-transform": _vm.sidebar_transform
     }
-  }, 'sidebar', _vm.sidebar_props, false))], 1)]);
+  }, 'sidebar', _vm.sidebar_props, false))], 1)], 1);
 };
-var Sectionvue_type_template_id_e5a74d64_staticRenderFns = [];
-Sectionvue_type_template_id_e5a74d64_render._withStripped = true;
+var Sectionvue_type_template_id_0a4b297d_staticRenderFns = [];
+Sectionvue_type_template_id_0a4b297d_render._withStripped = true;
 
-;// ./src/components/Section.vue?vue&type=template&id=e5a74d64
+;// ./src/components/Section.vue?vue&type=template&id=0a4b297d
 
 ;// ./src/stuff/frame.js
 
@@ -12922,9 +12933,9 @@ function shaders_arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.
 });
 ;// ./src/components/Section.vue?vue&type=script&lang=js
  /* harmony default export */ const components_Sectionvue_type_script_lang_js = (Sectionvue_type_script_lang_js); 
-// EXTERNAL MODULE: ./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/Section.vue?vue&type=style&index=0&id=e5a74d64&prod&lang=css
-var Sectionvue_type_style_index_0_id_e5a74d64_prod_lang_css = __webpack_require__(944);
-;// ./src/components/Section.vue?vue&type=style&index=0&id=e5a74d64&prod&lang=css
+// EXTERNAL MODULE: ./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/Section.vue?vue&type=style&index=0&id=0a4b297d&prod&lang=css
+var Sectionvue_type_style_index_0_id_0a4b297d_prod_lang_css = __webpack_require__(477);
+;// ./src/components/Section.vue?vue&type=style&index=0&id=0a4b297d&prod&lang=css
 
 ;// ./src/components/Section.vue
 
@@ -12937,8 +12948,8 @@ var Sectionvue_type_style_index_0_id_e5a74d64_prod_lang_css = __webpack_require_
 
 var Section_component = normalizeComponent(
   components_Sectionvue_type_script_lang_js,
-  Sectionvue_type_template_id_e5a74d64_render,
-  Sectionvue_type_template_id_e5a74d64_staticRenderFns,
+  Sectionvue_type_template_id_0a4b297d_render,
+  Sectionvue_type_template_id_0a4b297d_staticRenderFns,
   false,
   null,
   null,
@@ -15026,20 +15037,20 @@ function xcontrol_arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r
     };
   }
 });
-;// ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/TitleLegendChart.vue?vue&type=template&id=694f11a0
-var TitleLegendChartvue_type_template_id_694f11a0_render = function render() {
+;// ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/TitleLegendChart.vue?vue&type=template&id=49a18308
+var TitleLegendChartvue_type_template_id_49a18308_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', {
     staticClass: "trading-vue-legend title-legend"
   }, [_vm.grid_id === 0 && _vm.showTitleChartLegend ? _c('div', {
     staticClass: "trading-vue-ohlcv"
-  }, [_vm._v("\n        " + _vm._s(_vm.common) + "\n        " + _vm._s(_vm.values) + "\n        " + _vm._s(_vm.decimalPlace) + "\n        " + _vm._s(_vm.grid_id) + "\n        " + _vm._s(_vm.meta_props) + "\n        " + _vm._s(_vm.legendDecimal) + "\n        " + _vm._s(_vm.showTitleChartLegend) + "\n    ")]) : _vm._e()]);
+  }, [_vm._v("\n        " + _vm._s(_vm.common) + " "), _c('br'), _c('br'), _vm._v("\n        " + _vm._s(_vm.values) + " "), _c('br'), _c('br'), _vm._v("\n        " + _vm._s(_vm.decimalPlace) + " "), _c('br'), _c('br'), _vm._v("\n        " + _vm._s(_vm.grid_id) + " "), _c('br'), _c('br'), _vm._v("\n        " + _vm._s(_vm.meta_props) + " "), _c('br'), _c('br'), _vm._v("\n        " + _vm._s(_vm.legendDecimal) + " "), _c('br'), _c('br'), _vm._v("\n        " + _vm._s(_vm.showTitleChartLegend) + " "), _c('br'), _c('br')]) : _vm._e()]);
 };
-var TitleLegendChartvue_type_template_id_694f11a0_staticRenderFns = [];
-TitleLegendChartvue_type_template_id_694f11a0_render._withStripped = true;
+var TitleLegendChartvue_type_template_id_49a18308_staticRenderFns = [];
+TitleLegendChartvue_type_template_id_49a18308_render._withStripped = true;
 
-;// ./src/components/TitleLegendChart.vue?vue&type=template&id=694f11a0
+;// ./src/components/TitleLegendChart.vue?vue&type=template&id=49a18308
 
 ;// ./node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/TitleLegendChart.vue?vue&type=script&lang=js
 /* harmony default export */ const TitleLegendChartvue_type_script_lang_js = ({
@@ -15106,9 +15117,9 @@ TitleLegendChartvue_type_template_id_694f11a0_render._withStripped = true;
 });
 ;// ./src/components/TitleLegendChart.vue?vue&type=script&lang=js
  /* harmony default export */ const components_TitleLegendChartvue_type_script_lang_js = (TitleLegendChartvue_type_script_lang_js); 
-// EXTERNAL MODULE: ./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/TitleLegendChart.vue?vue&type=style&index=0&id=694f11a0&prod&lang=css
-var TitleLegendChartvue_type_style_index_0_id_694f11a0_prod_lang_css = __webpack_require__(378);
-;// ./src/components/TitleLegendChart.vue?vue&type=style&index=0&id=694f11a0&prod&lang=css
+// EXTERNAL MODULE: ./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/components/TitleLegendChart.vue?vue&type=style&index=0&id=49a18308&prod&lang=css
+var TitleLegendChartvue_type_style_index_0_id_49a18308_prod_lang_css = __webpack_require__(558);
+;// ./src/components/TitleLegendChart.vue?vue&type=style&index=0&id=49a18308&prod&lang=css
 
 ;// ./src/components/TitleLegendChart.vue
 
@@ -15121,8 +15132,8 @@ var TitleLegendChartvue_type_style_index_0_id_694f11a0_prod_lang_css = __webpack
 
 var TitleLegendChart_component = normalizeComponent(
   components_TitleLegendChartvue_type_script_lang_js,
-  TitleLegendChartvue_type_template_id_694f11a0_render,
-  TitleLegendChartvue_type_template_id_694f11a0_staticRenderFns,
+  TitleLegendChartvue_type_template_id_49a18308_render,
+  TitleLegendChartvue_type_template_id_49a18308_staticRenderFns,
   false,
   null,
   null,
@@ -15686,9 +15697,9 @@ function TradingVuevue_type_script_lang_js_arrayLikeToArray(r, a) { (null == a |
 });
 ;// ./src/TradingVue.vue?vue&type=script&lang=js
  /* harmony default export */ const src_TradingVuevue_type_script_lang_js = (TradingVuevue_type_script_lang_js); 
-// EXTERNAL MODULE: ./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/TradingVue.vue?vue&type=style&index=0&id=393e957b&prod&lang=css
-var TradingVuevue_type_style_index_0_id_393e957b_prod_lang_css = __webpack_require__(402);
-;// ./src/TradingVue.vue?vue&type=style&index=0&id=393e957b&prod&lang=css
+// EXTERNAL MODULE: ./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/TradingVue.vue?vue&type=style&index=0&id=126a633f&prod&lang=css
+var TradingVuevue_type_style_index_0_id_126a633f_prod_lang_css = __webpack_require__(711);
+;// ./src/TradingVue.vue?vue&type=style&index=0&id=126a633f&prod&lang=css
 
 ;// ./src/TradingVue.vue
 
